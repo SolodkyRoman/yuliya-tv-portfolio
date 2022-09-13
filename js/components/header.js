@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <header class="header">
                 <a href="index.html" class="logo">
                     <span class="name">Yulia</span>
@@ -24,7 +24,7 @@ class Header extends HTMLElement {
                 </ul>
             </header>
         `;
-    }
+  }
 }
 
 customElements.define('header-component', Header);

@@ -1,4 +1,4 @@
-@import "reset.css";
+@import 'reset.css';
 @font-face {
   font-family: "Neutral Face";
   src: url("../fonts/NeutralFace.ttf");
@@ -40,7 +40,8 @@
 }
 body {
   font-family: "Neutral Face", sans-serif;
-  color: #100AFF;
+  color: #100aff;
+  cursor: url(../images/arrow.png), auto;
 }
 body.block-scroll {
   height: 100%;
@@ -48,9 +49,10 @@ body.block-scroll {
 }
 
 a {
-  color: #100AFF;
+  color: #100aff;
   text-decoration: none;
   position: relative;
+  cursor: url(../images/arrow.png), auto;
 }
 
 .container {
@@ -66,7 +68,7 @@ a {
   align-items: center;
 }
 .header .line {
-  background: #100AFF;
+  background: #100aff;
   height: 0.6px;
   width: 100%;
   margin: 0 55px;
@@ -74,7 +76,7 @@ a {
 .header .logo {
   font-family: Inter, sans-serif;
   font-size: 40px;
-  color: #100AFF;
+  color: #100aff;
   display: flex;
   background: white;
   text-transform: uppercase;
@@ -117,7 +119,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  background: #100AFF;
+  background: #100aff;
   opacity: 1;
 }
 
@@ -150,7 +152,7 @@ a {
 .preloader .loader::before {
   height: 1px;
   width: 500px;
-  background-color: #100AFF;
+  background-color: #100aff;
   animation: loaderLine 0.8s cubic-bezier(0, 0, 0.03, 0.9) infinite;
 }
 
@@ -237,7 +239,7 @@ a {
 .project-page .more-projects {
   margin-top: 90px;
   padding-top: 25px;
-  border-top: 1px solid #100AFF;
+  border-top: 1px solid #100aff;
 }
 .project-page .more-projects .more-heading {
   font-size: 40px;
@@ -267,7 +269,7 @@ a {
   bottom: 0;
   top: 0;
   opacity: 0;
-  background: #100AFF;
+  background: #100aff;
   display: flex;
   justify-content: center;
   align-items: center;

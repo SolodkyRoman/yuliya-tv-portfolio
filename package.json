@@ -1,0 +1,24 @@
+{
+  "name": "yuliya-tv-portfolio",
+  "version": "1.0.0",
+  "description": "A simple portfolio website for my girlfriend who is a graphic designer.",
+  "main": "index.js",
+  "scripts": {
+    "format": "npm format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolodkyRoman/yuliya-tv-portfolio.git"
+  },
+  "author": "Solodkyi Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SolodkyRoman/yuliya-tv-portfolio/issues"
+  },
+  "homepage": "https://github.com/SolodkyRoman/yuliya-tv-portfolio#readme",
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "prettier": "2.7.1"
+  }
+}

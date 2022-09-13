@@ -116,7 +116,7 @@ const PROJECTS_DATA = [
         id: PROJECT_IDS.get('limozh'),
         name: 'Limozh',
         thumbnailSmall: 'images/others/limoge.png',
-        thumbnailBig: 'images/projects/limozh/limozh.png',
+        thumbnailBig: 'images/projects/limozh/limozh-animation.gif',
         labels: [PROJECT_LABELS.get('logo'), PROJECT_LABELS.get('identity'), PROJECT_LABELS.get('packaging')],
         descriptionBlocks: [
             'Limozh is a brand that produces high-quality scented candles for people, that value aestatics in everyday life. The concept of identity and packaging is based on the custom experimental typeface. A tender color palette together with a clean and uncluttered layout enhances the feeling of brand\'s elegance and sophistication.',
@@ -127,7 +127,7 @@ const PROJECTS_DATA = [
                 value: 'Personal Project'
             },
             {
-                key: 'role',
+                key: 'Role',
                 value: 'Art Direction/Graphic Design'
             }
         ],

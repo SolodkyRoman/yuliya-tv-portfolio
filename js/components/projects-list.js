@@ -6,12 +6,10 @@ class ProjectsList extends HTMLElement {
     }
 
     getProjectLabels(labels) {
-        console.log(labels);
         return labels.map(label => `<span class="category">${label}</span>`).join('');
     }
 
     getProjectTemplate(project) {
-        console.log(project.labels, this);
         return `
             <div class="project">
                 <div class="meta">

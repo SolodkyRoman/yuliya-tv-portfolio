@@ -15,7 +15,6 @@ const getPageName = () => window.location.search.split('=').pop();
 
 const getOthersProjectsList = () => {
     const currentProjectId = getPageName();
-    console.log(window.location.search);
     const projects = PROJECTS.filter(({ id }) => id !== currentProjectId);
 
     return shuffleArray(projects);
@@ -23,11 +22,10 @@ const getOthersProjectsList = () => {
 
 const getProject = () => {
     const currentProjectId = getPageName();
-    console.log(currentProjectId);
     const project = PROJECTS.find(({ id }) => id === currentProjectId);
 
     if (!project) {
-        // window.location = 'index.html';
+        window.location = 'index.html';
     }
 
     return project;

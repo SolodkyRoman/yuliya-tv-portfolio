@@ -1,47 +1,50 @@
 import { loadImages } from './image-loader.js';
 import { SLIDER_ITEM_CLASS } from './constants.js';
-import { hidePreloader, showPreloader } from './preloader.js'
 
-const startImageSlider = (interval) => {
-    let hideImage = false;
-    let currentImageIndex = -1;
-    let demoImages = document.getElementsByClassName(SLIDER_ITEM_CLASS);
-
-    const changeActiveImage = () => {
-        hideImage = true;
-        demoImages[currentImageIndex].classList.add('active');
-        demoImages[currentImageIndex === 0 ? demoImages.length - 1 : currentImageIndex - 1].classList.remove('active');
+class Slider {
+    constructor({ container, slides, interval }) {
+        this.container = container;
+        this.slides = slides;
+        this.interval = interval;
     }
 
-    setInterval(() => {
-        if (currentImageIndex === demoImages.length - 1) {
-            currentImageIndex = 0;
-        } else {
-            currentImageIndex++;
+    start = () => {
+        let hideImage = false;
+        let currentImageIndex = 0;
+
+        const changeActiveImage = () => {
+            hideImage = true;
+            this.imageNodes[currentImageIndex].classList.add('active');
+            this.imageNodes[currentImageIndex === 0 ? this.imageNodes.length - 1 : currentImageIndex - 1].classList.remove('active');
         }
 
-        changeActiveImage();
-    }, interval)
+        setInterval(() => {
+            if (currentImageIndex === this.imageNodes.length - 1) {
+                currentImageIndex = 0;
+            } else {
+                currentImageIndex++;
+            }
+
+            changeActiveImage();
+        }, this.interval)
+    }
+
+    appendImages = (element, images) => {
+        this.imageNodes = images.reduce((accum, src) => {
+            const img = document.createElement('img');
+            img.classList.add(SLIDER_ITEM_CLASS)
+            img.src = src;
+            return [...accum, img]
+        }, []);
+
+        this.imageNodes[0].classList.add('active');
+        element.append(...this.imageNodes);
+    }
+
+    initialize = async () => {
+        const loadedImages = await loadImages(this.slides);
+        this.appendImages(this.container, loadedImages);
+    }
 }
 
-const appendImages = (element, images) => {
-    const imageNodes = images.reduce((accum, src) => {
-        const img = document.createElement('img');
-        img.classList.add(SLIDER_ITEM_CLASS)
-        img.src = src;
-        return [...accum, img]
-    }, []);
-
-    imageNodes[0].classList.add('active');
-    element.append(...imageNodes);
-}
-
-const initializeSlider = async ({ container, interval, slides }) => {
-    showPreloader();
-    const loadedImages = await loadImages(slides);
-    appendImages(container, loadedImages);
-    startImageSlider(interval);
-    hidePreloader();
-}
-
-export { initializeSlider };
+export { Slider };

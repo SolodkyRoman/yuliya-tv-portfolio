@@ -67,7 +67,7 @@ a {
 }
 .header .line {
   background: #100AFF;
-  height: 1px;
+  height: 0.6px;
   width: 100%;
   margin: 0 55px;
 }
@@ -228,6 +228,7 @@ a {
   font-size: 40px;
 }
 .home-page .works .project .categories {
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
 }

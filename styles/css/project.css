@@ -41,7 +41,7 @@
 body {
   font-family: "Neutral Face", sans-serif;
   color: #100aff;
-  cursor: url(../images/arrow.png), auto;
+  cursor: url(../../images/arrow.png), auto;
 }
 body.block-scroll {
   height: 100%;
@@ -52,7 +52,7 @@ a {
   color: #100aff;
   text-decoration: none;
   position: relative;
-  cursor: url(../images/arrow.png), auto;
+  cursor: url(../../images/arrow-filled.png), auto;
 }
 
 .container {

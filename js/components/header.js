@@ -16,10 +16,7 @@ class Header extends HTMLElement {
                         <a href="index.html#projects" class="navigation-link">Projects</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">About</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#" class="navigation-link">Contact</a>
+                        <a href="about.html" class="navigation-link">About</a>
                     </li>
                 </ul>
             </header>

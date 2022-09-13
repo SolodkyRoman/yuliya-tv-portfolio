@@ -177,4 +177,77 @@ a {
   height: 30px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.about-page .about-content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-page .column {
+  flex: 1 1 0;
+  max-width: 550px;
+}
+.about-page .column:first-child {
+  max-width: 600px;
+}
+.about-page .avatar {
+  width: 100%;
+}
+.about-page .skills {
+  margin-top: 40px;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.about-page .skills .skills-column:first-child {
+  margin-right: 80px;
+}
+.about-page .skills .skills-heading {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about-page .intro-heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.about-page .paragraph {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 20px 0;
+}
+.about-page .contact-heading {
+  font-size: 36px;
+  margin-top: 80px;
+}
+.about-page .email-link {
+  margin-top: 15px;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  text-decoration: underline;
+}
+.about-page .socials {
+  margin-top: 25px;
+  display: flex;
+}
+.about-page .socials .social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+.about-page .socials .social-link:hover {
+  border: 1px solid #100aff;
+}
+.about-page .socials .social-link svg {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=about.css.map */

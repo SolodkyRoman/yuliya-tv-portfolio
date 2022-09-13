@@ -11,14 +11,14 @@ body {
     overflow: hidden;
   }
 
-  cursor: url(../images/arrow.png), auto;
+  cursor: url(../../images/arrow.png), auto;
 }
 
 a {
   color: variables.$text;
   text-decoration: none;
   position: relative;
-  cursor: url(../images/arrow.png), auto;
+  cursor: url(../../images/arrow-filled.png), auto;
 }
 
 .container {

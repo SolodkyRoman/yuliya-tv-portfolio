@@ -1,42 +1,42 @@
 @import 'reset.css';
 @font-face {
   font-family: "Neutral Face";
-  src: url("../fonts/NeutralFace.ttf");
+  src: url("../../fonts/NeutralFace.ttf");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  src: url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.woff") format("woff");
+  src: url("../../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../../fonts/Inter-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  src: url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("../fonts/Inter-Italic.woff") format("woff");
+  src: url("../../fonts/Inter-Italic.woff2") format("woff2"), url("../../fonts/Inter-Italic.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../fonts/Inter-BoldItalic.woff") format("woff");
+  src: url("../../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../../fonts/Inter-BoldItalic.woff") format("woff");
 }
 body {
   font-family: "Neutral Face", sans-serif;
@@ -177,86 +177,118 @@ a {
   height: 30px;
 }
 
-.home-page .slider {
-  margin-top: 30px;
-  height: calc(100vh - 140px);
-  min-height: 600px;
+.project-page {
+  padding-bottom: 100px;
+}
+.project-page .project-details {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home-page .slider.active {
-  opacity: 1;
-  position: relative;
-}
-.home-page .slider .slider-item {
-  position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  transition: all 300ms ease-in-out 0s;
-  transition-delay: 100ms;
-  opacity: 0;
-}
-.home-page .slider .slider-item.active {
-  opacity: 1;
-  transition-delay: 0ms;
-  z-index: 1;
-}
-.home-page .about {
-  padding: 20px;
-  margin-top: 80px;
-  font-size: 55px;
-  line-height: 65px;
-}
-.home-page .works {
-  margin-top: 100px;
-}
-.home-page .works .project {
-  margin-bottom: 120px;
-}
-.home-page .works .project .meta {
-  display: flex;
+  margin-top: 120px;
   justify-content: space-between;
-  align-items: center;
 }
-.home-page .works .project .divider {
-  height: 1px;
-  margin: 0 37px;
-  flex-grow: 1;
-  background: blue;
-}
-.home-page .works .project .name {
+.project-page .project-name {
   font-size: 40px;
 }
-.home-page .works .project .categories {
+.project-page .project-categories {
+  margin-top: 20px;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+}
+.project-page .project-categories span {
+  margin-right: 25px;
+}
+.project-page .project-info {
+  max-width: 600px;
+}
+.project-page .project-description {
+  margin-top: 40px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+.project-page .project-description .paragraph {
+  margin-bottom: 20px;
+}
+.project-page .project-credentials {
+  font-family: Inter, sans-serif;
+  font-style: italic;
   font-size: 14px;
+}
+.project-page .project-credentials .project-row {
+  margin-bottom: 9px;
+}
+.project-page .project-credentials .project-row b {
+  font-weight: 700;
+}
+.project-page .project-pictures {
+  margin-top: 60px;
+}
+.project-page .project-pictures .project-illustration {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.project-page .project-pictures .project-illustration-split {
   display: flex;
-  justify-content: space-between;
 }
-.home-page .works .project .categories .category:not(:first-child) {
-  margin-left: 40px;
+.project-page .project-pictures .project-illustration-split .project-illustration {
+  max-width: 50%;
+  min-width: 0;
 }
-.home-page .works .project .project-link {
+.project-page .project-pictures .project-illustration-split .project-illustration:first-child {
+  margin-right: 20px;
+}
+.project-page .more-projects {
+  margin-top: 90px;
+  padding-top: 25px;
+  border-top: 1px solid #100aff;
+}
+.project-page .more-projects .more-heading {
+  font-size: 40px;
+}
+.project-page .other-projects-gallery {
   margin-top: 50px;
-  display: block;
+  display: inline-grid;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.project-page .other-projects-gallery .project-link {
+  height: 276px;
+}
+.project-page .other-projects-gallery .project-link .project-thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   position: relative;
 }
-.home-page .works .project .project-link::after {
-  content: "";
-  display: block;
-  background: blue;
+.project-page .other-projects-gallery .project-link .thumbnail-hover {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   opacity: 0;
+  background: #100aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home-page .works .project .project-link:hover::after {
-  opacity: 0.1;
+.project-page .other-projects-gallery .project-link .thumbnail-hover .project-name {
+  color: white;
+  font-size: 30px;
 }
-.home-page .works .project .thumbnail {
-  width: 100%;
+.project-page .other-projects-gallery .project-link .thumbnail-hover .project-label {
+  font-family: Inter, sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  margin: 0 40px;
+}
+.project-page .other-projects-gallery .project-link:hover .thumbnail-hover {
+  opacity: 1;
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=project.css.map */

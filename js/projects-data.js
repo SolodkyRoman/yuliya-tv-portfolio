@@ -1,6 +1,7 @@
 const PROJECT_IDS = new Map([
   ['utopia', 'utopia-house'],
   ['limozh', 'limozh'],
+  ['peppy', 'peppy'],
 ]);
 
 const PROJECTS_IMAGES = new Map([
@@ -79,6 +80,22 @@ const PROJECTS_IMAGES = new Map([
       },
     ],
   ],
+  [
+    PROJECT_IDS.get('peppy'),
+    [
+      { alt: '', src: 'images/projects/peppy/peppy-happy.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-logo-animation.gif' },
+      { alt: '', src: 'images/projects/peppy/peppy-tubes.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-eyeshadow.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-lipsticks.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-open-lotion.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-lotion.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-hair.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-shopping-bag.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-thanks.png' },
+      { alt: '', src: 'images/projects/peppy/peppy-phone.png' },
+    ],
+  ],
 ]);
 
 const PROJECT_LABELS = new Map([
@@ -125,6 +142,26 @@ const PROJECTS_DATA = [
     ],
     descriptionBlocks: [
       "Limozh is a brand that produces high-quality scented candles for people, that value aestatics in everyday life. The concept of identity and packaging is based on the custom experimental typeface. A tender color palette together with a clean and uncluttered layout enhances the feeling of brand's elegance and sophistication.",
+    ],
+    credentials: [
+      {
+        key: 'Client',
+        value: 'Personal Project',
+      },
+      {
+        key: 'Role',
+        value: 'Art Direction/Graphic Design',
+      },
+    ],
+  },
+  {
+    id: PROJECT_IDS.get('peppy'),
+    name: 'Peppy',
+    thumbnailSmall: 'images/others/limoge.png',
+    thumbnailBig: 'images/projects/peppy/peppy-happy.png',
+    labels: [PROJECT_LABELS.get('logo'), PROJECT_LABELS.get('identity')],
+    descriptionBlocks: [
+      'Peppy Cosmetics is a brand of teen makeup. The identity and packaging was inspired by the teen girl magazines and TV show aesthetics of late 90s and early 00s. The task was to create a standout branding that could translate the spirit of teenagers - the spirit of freedom, creativity and individuality. It is so crucial for our packaging to stand out, same as for teens who dye their hair, experiment with makeup and clothes to find their unique style.',
     ],
     credentials: [
       {

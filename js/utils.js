@@ -15,6 +15,7 @@ const getPageName = () => window.location.search.split('=').pop();
 
 const getOthersProjectsList = () => {
   const currentProjectId = getPageName();
+  console.log(currentProjectId);
   const projects = PROJECTS.filter(({ id }) => id !== currentProjectId);
 
   return shuffleArray(projects);

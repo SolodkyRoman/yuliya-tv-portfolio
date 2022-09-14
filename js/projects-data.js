@@ -9,40 +9,40 @@ const PROJECTS_IMAGES = new Map([
     PROJECT_IDS.get('utopia'),
     [
       {
-        alt: '',
-        src: 'images/projects/utopia/final-hope-so.gif',
+        alt: 'Utopia animation',
+        src: 'images/projects/utopia/utopia-animation.gif',
       },
       {
-        alt: '',
-        src: 'images/projects/utopia/utopia_box.png',
+        alt: 'Utopia Box',
+        src: 'images/projects/utopia/utopia-box.png',
       },
       {
         id: 'stickers-gif',
-        alt: '',
-        src: 'images/projects/utopia/utopia-house-portfolio-project.gif',
+        alt: 'Utopia stickers',
+        src: 'images/projects/utopia/utopia-stickers-animation.gif',
       },
       {
-        alt: '',
-        src: 'images/projects/utopia/utopia_smiles.png',
+        alt: 'Utopia smiles',
+        src: 'images/projects/utopia/utopia-smiles.png',
       },
       {
-        alt: '',
-        src: 'images/projects/utopia/utopia_web.png',
+        alt: 'Utopia web',
+        src: 'images/projects/utopia/utopia-web.png',
       },
       {
-        alt: ['', ''],
+        alt: ['Utopia Illustration', 'Utopia Illustration'],
         src: [
-          'images/projects/utopia/utopia_left.png',
-          'images/projects/utopia/utopia_right.png',
+          'images/projects/utopia/utopia-left.png',
+          'images/projects/utopia/utopia-right.png',
         ],
       },
       {
-        alt: '',
-        src: 'images/projects/utopia/utopia_box_smiles.png',
+        alt: 'Utopia Boxes',
+        src: 'images/projects/utopia/utopia-box-smiles.png',
       },
       {
-        alt: '',
-        src: 'images/projects/utopia/utopia_box_hand.png',
+        alt: 'Utopia Box',
+        src: 'images/projects/utopia/utopia-box-hand.png',
       },
     ],
   ],
@@ -50,32 +50,32 @@ const PROJECTS_IMAGES = new Map([
     PROJECT_IDS.get('limozh'),
     [
       {
-        alt: '',
+        alt: 'Limozh candles',
         src: 'images/projects/limozh/some-candles.png',
       },
       {
-        alt: '',
+        alt: 'Limozh logo',
         src: 'images/projects/limozh/limozh-logo.png',
       },
       {
         id: 'stickers-gif',
-        alt: '',
+        alt: 'Limozh opened candle',
         src: 'images/projects/limozh/limozh-open-candle.png',
       },
       {
-        alt: '',
+        alt: 'Limozh box',
         src: 'images/projects/limozh/limozh-box-unpacked.png',
       },
       {
-        alt: '',
+        alt: 'Limozh bags',
         src: 'images/projects/limozh/limozh-bags.png',
       },
       {
-        alt: '',
+        alt: 'Limozh cards',
         src: 'images/projects/limozh/limozh-cards.png',
       },
       {
-        alt: '',
+        alt: 'Limozh animation',
         src: 'images/projects/limozh/limozh-animation.gif',
       },
     ],
@@ -83,17 +83,29 @@ const PROJECTS_IMAGES = new Map([
   [
     PROJECT_IDS.get('peppy'),
     [
-      { alt: '', src: 'images/projects/peppy/peppy-happy.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-logo-animation.gif' },
-      { alt: '', src: 'images/projects/peppy/peppy-tubes.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-eyeshadow.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-lipsticks.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-open-lotion.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-lotion.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-hair.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-shopping-bag.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-thanks.png' },
-      { alt: '', src: 'images/projects/peppy/peppy-phone.png' },
+      { alt: 'Peppy', src: 'images/projects/peppy/peppy-happy.png' },
+      {
+        alt: 'Peppy logo',
+        src: 'images/projects/peppy/peppy-logo-animation.gif',
+      },
+      { alt: 'Peppy tubes', src: 'images/projects/peppy/peppy-tubes.png' },
+      {
+        alt: 'Peppy eyeshadow',
+        src: 'images/projects/peppy/peppy-eyeshadow.png',
+      },
+      {
+        alt: 'Peppy lipstick',
+        src: 'images/projects/peppy/peppy-lipsticks.png',
+      },
+      {
+        alt: 'Peppy lotion',
+        src: 'images/projects/peppy/peppy-open-lotion.png',
+      },
+      { alt: 'Peppy lotion', src: 'images/projects/peppy/peppy-lotion.png' },
+      { alt: 'Peppy hair', src: 'images/projects/peppy/peppy-hair.png' },
+      { alt: 'Peppy bag', src: 'images/projects/peppy/peppy-shopping-bag.png' },
+      { alt: 'Peppy thanks', src: 'images/projects/peppy/peppy-thanks.png' },
+      { alt: 'Peppy phone', src: 'images/projects/peppy/peppy-phone.png' },
     ],
   ],
 ]);
@@ -108,8 +120,8 @@ const PROJECTS_DATA = [
   {
     id: PROJECT_IDS.get('utopia'),
     name: 'Utopia Haus',
-    thumbnailSmall: 'images/others/gallette.png',
-    thumbnailBig: 'images/projects/utopia/final-hope-so.gif',
+    thumbnailSmall: 'images/projects/utopia/utopia-smiles.png',
+    thumbnailBig: 'images/projects/utopia/utopia-animation.gif',
     labels: [PROJECT_LABELS.get('packaging')],
     descriptionBlocks: [
       'Utopia Haus is a party rental company from Sacramento, California. It delivers smiles with luxury party equipment and bounce houses for different type of celebration in your own unique way.',
@@ -133,7 +145,7 @@ const PROJECTS_DATA = [
   {
     id: PROJECT_IDS.get('limozh'),
     name: 'Limozh',
-    thumbnailSmall: 'images/others/limoge.png',
+    thumbnailSmall: 'images/projects/limozh/limoge-small.png',
     thumbnailBig: 'images/projects/limozh/limozh-animation.gif',
     labels: [
       PROJECT_LABELS.get('logo'),
@@ -157,7 +169,7 @@ const PROJECTS_DATA = [
   {
     id: PROJECT_IDS.get('peppy'),
     name: 'Peppy',
-    thumbnailSmall: 'images/others/limoge.png',
+    thumbnailSmall: 'images/projects/peppy/peppy-happy.png',
     thumbnailBig: 'images/projects/peppy/peppy-happy.png',
     labels: [PROJECT_LABELS.get('logo'), PROJECT_LABELS.get('identity')],
     descriptionBlocks: [

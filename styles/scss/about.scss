@@ -2,10 +2,13 @@
 @import 'main';
 
 .about-page {
+  padding-bottom: 100px;
+
   .about-content {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .column {

@@ -177,10 +177,14 @@ a {
   height: 30px;
 }
 
+.about-page {
+  padding-bottom: 100px;
+}
 .about-page .about-content {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .about-page .column {
   flex: 1 1 0;

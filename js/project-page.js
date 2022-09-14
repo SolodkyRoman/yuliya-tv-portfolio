@@ -1,26 +1,13 @@
 import { hidePreloader } from './preloader.js';
+import { loadImages } from './image-loader.js';
 
-const hidePreloaderAfterImageLoad = () => {
-  const images = document.getElementsByClassName('project-illustration');
+const hidePreloaderAfterImageLoad = async () => {
+  const images = [
+    ...document.getElementsByClassName('project-illustration'),
+  ].map((img) => img.src);
 
-  if (!images.length) {
-    hidePreloader();
-  }
-
-  let loadedImages = 0;
-  for (let i = 0; i < images.length; i++) {
-    if (images[i].complete) {
-      loadedImages++;
-    } else {
-      images[i].addEventListener('load', () => {
-        loadedImages++;
-
-        if (loadedImages === images.length) hidePreloader();
-      });
-    }
-
-    if (loadedImages === images.length) hidePreloader();
-  }
+  await loadImages(images);
+  hidePreloader();
 };
 
 hidePreloaderAfterImageLoad();

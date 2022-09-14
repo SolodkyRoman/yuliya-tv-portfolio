@@ -11,19 +11,18 @@ const shuffleArray = (array) => {
   return result;
 };
 
-const getPageName = () => window.location.search.split('=').pop();
+const getProjectId = () => window.location.search.split('=').pop();
 
 const getOthersProjectsList = () => {
-  const currentProjectId = getPageName();
-  console.log(currentProjectId);
-  const projects = PROJECTS.filter(({ id }) => id !== currentProjectId);
+  const projectId = getProjectId();
+  const projects = PROJECTS.filter(({ id }) => id !== projectId);
 
   return shuffleArray(projects);
 };
 
 const getProject = () => {
-  const currentProjectId = getPageName();
-  const project = PROJECTS.find(({ id }) => id === currentProjectId);
+  const projectId = getProjectId();
+  const project = PROJECTS.find(({ id }) => id === projectId);
 
   if (!project) {
     window.location = 'index.html';
@@ -47,7 +46,7 @@ const handleAppearanceInViewport = (element, callback) => {
 
 export {
   shuffleArray,
-  getPageName,
+  getProjectId,
   getOthersProjectsList,
   getProject,
   handleAppearanceInViewport,

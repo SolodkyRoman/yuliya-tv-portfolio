@@ -7,6 +7,7 @@ const loadImages = async (images) =>
     const checkIfLoadingFinished = () => {
       const allImagesProcessed =
         loadedImagesCounter + failedImagesCounter === images.length;
+
       if (allImagesProcessed) {
         res(loadedImages);
       }

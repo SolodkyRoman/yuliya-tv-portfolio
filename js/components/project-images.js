@@ -7,6 +7,8 @@ class ProjectImages extends HTMLElement {
   }
 
   getProjectImages() {
+    console.log(this.project.images);
+
     return this.project.images
       .map(({ alt, id, src }) =>
         Array.isArray(src)
@@ -29,6 +31,7 @@ class ProjectImages extends HTMLElement {
     stickersGif.style.opacity = 0;
 
     handleAppearanceInViewport(stickersGif, () => {
+      // eslint-disable-next-line no-self-assign
       stickersGif.src = stickersGif.src;
       stickersGif.style.opacity = 1;
     });

@@ -1,4 +1,4 @@
-import { loadImages } from './image-loader.js';
+import { loadImages } from './utils.js';
 import { SLIDER_ITEM_CLASS } from './constants.js';
 
 class Slider {

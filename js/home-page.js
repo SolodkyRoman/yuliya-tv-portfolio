@@ -1,7 +1,6 @@
 import { Slider } from './slider.js';
 import { IMAGE_CHANGE_INTERVAL_MS, IMAGES_SLIDES } from './constants.js';
-import { loadImages } from './image-loader.js';
-import { hidePreloader } from './preloader.js';
+import { loadImages, hidePreloader } from './utils.js';
 
 const handleProjectsPreviewsLoad = () => {
   const projectsContainer = document.getElementById('projects');

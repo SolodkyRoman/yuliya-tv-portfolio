@@ -44,10 +44,53 @@ const handleAppearanceInViewport = (element, callback) => {
   observer.observe(element);
 };
 
+const loadImages = async (images) =>
+  new Promise((res) => {
+    const loadedImages = [];
+    let loadedImagesCounter = 0;
+    let failedImagesCounter = 0;
+
+    const checkIfLoadingFinished = () => {
+      const allImagesProcessed =
+        loadedImagesCounter + failedImagesCounter === images.length;
+
+      if (allImagesProcessed) {
+        res(loadedImages);
+      }
+    };
+
+    images.forEach((src, index) => {
+      const image = new Image();
+      image.onload = () => {
+        loadedImages[index] = src;
+        loadedImagesCounter++;
+        checkIfLoadingFinished();
+      };
+      image.onerror = () => {
+        failedImagesCounter++;
+        checkIfLoadingFinished();
+      };
+      image.src = src;
+    });
+  });
+
+const showPreloader = () => {
+  document.body.classList.add('block-scroll');
+  document.getElementById('preloader').classList.add('active');
+};
+
+const hidePreloader = () => {
+  document.body.classList.remove('block-scroll');
+  document.getElementById('preloader').classList.remove('active');
+};
+
 export {
   shuffleArray,
   getProjectId,
   getOthersProjectsList,
   getProject,
   handleAppearanceInViewport,
+  loadImages,
+  showPreloader,
+  hidePreloader,
 };

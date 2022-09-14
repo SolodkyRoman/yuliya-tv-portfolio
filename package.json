@@ -1,7 +1,7 @@
 {
   "name": "yuliya-tv-portfolio",
   "version": "1.0.0",
-  "description": "A simple portfolio website for my girlfriend who is a graphic designer.",
+  "description": "A simple portfolio website for a graphic designer.",
   "main": "index.js",
   "scripts": {
     "format": "npm format"

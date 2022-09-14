@@ -1,5 +1,4 @@
-import { hidePreloader } from './preloader.js';
-import { loadImages } from './image-loader.js';
+import { loadImages, hidePreloader } from './utils.js';
 
 const hidePreloaderAfterImageLoad = async () => {
   const images = [

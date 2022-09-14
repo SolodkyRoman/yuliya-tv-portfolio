@@ -7,8 +7,6 @@ class ProjectImages extends HTMLElement {
   }
 
   getProjectImages() {
-    console.log(this.project.images);
-
     return this.project.images
       .map(({ alt, id, src }) =>
         Array.isArray(src)

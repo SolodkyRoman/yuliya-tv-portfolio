@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/styles/css/project.css" />
+    <script src="/static/js/components/header.js"></script>
+    <script
+      src="/static/js/components/project-details.js"
+      type="module"
+    ></script>
+    <script src="/static/js/components/more-projects.js" type="module"></script>
+    <script
+      src="/static/js/components/project-images.js"
+      type="module"
+    ></script>
+  </head>
+  <body class="project-page">
+    <div id="preloader" class="preloader active">
+      <div class="loader"></div>
+    </div>
+    <div class="container">
+      <header-component></header-component>
+      <project-details-component></project-details-component>
+      <project-images-component></project-images-component>
+      <more-projects-component></more-projects-component>
+    </div>
+    <script src="/static/js/project-page.js" type="module"></script>
+  </body>
+</html>

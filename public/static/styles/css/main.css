@@ -1,0 +1,185 @@
+@import 'reset.css';
+@font-face {
+  font-family: "Neutral Face";
+  src: url("../../fonts/NeutralFace.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../../fonts/Inter-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/Inter-Italic.woff2") format("woff2"), url("../../fonts/Inter-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../../fonts/Inter-BoldItalic.woff") format("woff");
+}
+html {
+  cursor: url(../../images/arrow.png), auto;
+}
+
+body {
+  font-family: "Neutral Face", sans-serif;
+  color: #100aff;
+  cursor: url(../../images/arrow.png), auto;
+}
+body.block-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #100aff;
+  text-decoration: none;
+  position: relative;
+  cursor: url(../../images/arrow-filled.png), auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 75px;
+  cursor: url(../../images/arrow.png), auto;
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .line {
+  background: #100aff;
+  height: 0.6px;
+  width: 100%;
+  margin: 0 55px;
+}
+.header .logo {
+  font-family: Inter, sans-serif;
+  font-size: 40px;
+  color: #100aff;
+  display: flex;
+  background: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.header .logo .name {
+  overflow: hidden;
+  width: 30px;
+  transition: all 0.2s;
+}
+.header .logo:hover .name {
+  width: 130px;
+}
+.header .logo .surname {
+  overflow: hidden;
+  width: 26px;
+  transition: all 0.3s;
+}
+.header .logo:hover .surname {
+  width: 280px;
+}
+.header .navigation {
+  display: flex;
+}
+.header .navigation .navigation-item {
+  margin-left: 35px;
+}
+.header .navigation .navigation-item:first-child {
+  margin-left: 0;
+}
+.header .navigation .navigation-item .navigation-link {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+.header .navigation .navigation-item .navigation-link:hover::after {
+  width: 110%;
+  height: 1px;
+  bottom: -4px;
+  left: -5%;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #100aff;
+  opacity: 1;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.preloader.active {
+  display: flex;
+}
+.preloader .loader {
+  display: block;
+  position: relative;
+  place-items: center;
+}
+.preloader .loader::before, .preloader .loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: -250px;
+}
+.preloader .loader::before {
+  height: 1px;
+  width: 500px;
+  background-color: #100aff;
+  animation: loaderLine 0.8s cubic-bezier(0, 0, 0.03, 0.9) infinite;
+}
+
+@keyframes loaderLine {
+  0%, 44%, 88.1%, 100% {
+    transform-origin: left;
+  }
+  0%, 100%, 88% {
+    transform: scaleX(0);
+  }
+  44.1%, 88% {
+    transform-origin: right;
+  }
+  33%, 44% {
+    transform: scaleX(1);
+  }
+}
+.cursor-img {
+  position: fixed;
+  transition: transform 0.5s linear;
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

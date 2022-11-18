@@ -42,6 +42,11 @@ html {
   cursor: url(../../images/arrow.png), auto;
 }
 
+::selection {
+  background: #100aff;
+  color: red;
+}
+
 body {
   font-family: "Neutral Face", sans-serif;
   color: #100aff;
@@ -76,7 +81,7 @@ a {
   background: #100aff;
   height: 0.6px;
   width: 100%;
-  margin: 0 55px;
+  margin-right: 55px;
 }
 .header .logo {
   font-family: Inter, sans-serif;
@@ -86,6 +91,7 @@ a {
   background: white;
   text-transform: uppercase;
   position: relative;
+  padding-right: 55px;
 }
 .header .logo .name {
   overflow: hidden;

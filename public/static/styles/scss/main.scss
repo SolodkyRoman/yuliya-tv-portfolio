@@ -6,6 +6,11 @@ html {
   cursor: url(../../images/arrow.png), auto;
 }
 
+::selection {
+  background: variables.$text;
+  color: red;
+}
+
 body {
   font-family: 'Neutral Face', sans-serif;
   color: variables.$text;
@@ -41,7 +46,7 @@ a {
     background: variables.$text;
     height: 0.6px;
     width: 100%;
-    margin: 0 55px;
+    margin-right: 55px;
   }
 
   .logo {
@@ -52,6 +57,7 @@ a {
     background: white;
     text-transform: uppercase;
     position: relative;
+    padding-right: 55px;
 
     .name {
       overflow: hidden;

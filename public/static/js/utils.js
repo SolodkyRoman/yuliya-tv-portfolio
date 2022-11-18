@@ -23,7 +23,7 @@ const getOthersProjectsList = () => {
 const getProject = () => {
   const projectId = getProjectId();
   const project = PROJECTS.find(({ id }) => id === projectId);
-
+  console.log(project);
   if (!project) {
     window.location = 'index.html';
   }

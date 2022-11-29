@@ -4,7 +4,8 @@
   "description": "A simple portfolio website for a graphic designer.",
   "main": "index.js",
   "scripts": {
-    "format": "npm format"
+    "format": "npm format",
+    "dev": "nodemon -e js,html,json & sass --watch public/static/styles/scss:public/static/styles/css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
+    "nodemon": "2.0.20",
     "prettier": "2.7.1"
   },
   "dependencies": {

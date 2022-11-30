@@ -21,6 +21,7 @@ const getOthersProjectsList = () => {
 };
 
 const getProject = () => {
+  console.log('het');
   const projectId = getProjectId();
   const project = PROJECTS.find(({ id }) => id === projectId);
   console.log(project);

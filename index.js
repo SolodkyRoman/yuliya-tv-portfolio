@@ -4,7 +4,14 @@ const publicPath = path.join(__dirname, 'public');
 const app = express();
 
 app.get('/', (req, res) => res.sendFile(`${publicPath}/index.html`));
+
 app.get('/about', (req, res) => res.sendFile(`${publicPath}/about.html`));
+
+app.get('/project/experiments', (req, res) => {
+  console.log('erqwer');
+  res.sendFile(`${publicPath}/experiments.html`);
+});
+
 app.get('/project/:name', (req, res) =>
   res.sendFile(`${publicPath}/project.html`),
 );

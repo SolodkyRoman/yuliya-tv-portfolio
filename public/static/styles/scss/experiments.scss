@@ -1,0 +1,98 @@
+@use 'variables';
+@import 'project';
+
+body {
+  color: variables.$white;
+
+  background: linear-gradient(
+    180deg,
+    #000000 13.66%,
+    #000aff 28.58%,
+    #000000 33.68%
+  );
+}
+
+a {
+  color: variables.$white;
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .line {
+    background: variables.$white;
+    height: 0.6px;
+    width: 100%;
+    margin-right: 55px;
+  }
+
+  .logo {
+    color: variables.$white;
+    background: transparent;
+  }
+}
+
+.project-page {
+  .project-pictures {
+    .project-illustration-split {
+      .project-illustration {
+        &:not(:last-child) {
+          margin-right: 120px;
+        }
+      }
+    }
+  }
+
+  margin-bottom: 150px;
+}
+
+.trust-animation {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  .project-trust-illustration {
+    max-height: 730px;
+  }
+}
+
+.trust-van {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.posters {
+  margin-top: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photos {
+  margin-top: 100px;
+  .photos-row {
+    display: flex;
+    align-items: flex-start;
+
+    &.second {
+      img {
+        margin-right: 135px;
+      }
+    }
+  }
+}
+
+.color-experiment {
+  height: 800px;
+}
+
+.be-real {
+  margin-top: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}

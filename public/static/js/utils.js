@@ -59,6 +59,10 @@ var loadVideos = async (videoElements) =>
     };
 
     [...videoElements].forEach((videoElement) => {
+      if (videoElement.HAVE_ENOUGH_DATA === 4) {
+        return processVideo(videoElement);
+      }
+
       videoElement.addEventListener(
         'error',
         () => {

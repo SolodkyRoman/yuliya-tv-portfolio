@@ -266,7 +266,7 @@ a {
   gap: 30px;
 }
 .project-page .project-link {
-  height: 276px;
+  height: 100%;
 }
 .project-page .project-link:hover .thumbnail-hover {
   opacity: 1;

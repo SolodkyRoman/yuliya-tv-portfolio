@@ -39,64 +39,65 @@
 
   .works {
     margin-top: 100px;
+  }
 
-    .project {
-      margin-bottom: 120px;
+  .project {
+    margin-bottom: 120px;
 
-      .meta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      .divider {
-        height: 1px;
-        margin: 0 37px;
-        flex-grow: 1;
-        background: blue;
-      }
+    .divider {
+      height: 1px;
+      margin: 0 37px;
+      flex-grow: 1;
+      background: blue;
+    }
 
-      .name {
-        font-size: 40px;
-      }
+    .name {
+      font-size: 40px;
+    }
 
-      .categories {
-        font-size: 14px;
-        display: flex;
-        justify-content: space-between;
+    .categories {
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
 
-        .category {
-          &:not(:first-child) {
-            margin-left: 40px;
-          }
+      .category {
+        &:not(:first-child) {
+          margin-left: 40px;
         }
       }
+    }
 
-      .project-link {
-        margin-top: 50px;
+    .project-link {
+      margin-top: 50px;
+      display: block;
+      position: relative;
+
+      &::after {
+        content: '';
         display: block;
-        position: relative;
-
-        &::after {
-          content: '';
-          display: block;
-          background: blue;
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          top: 0;
-          opacity: 0;
-        }
-
-        &:hover::after {
-          opacity: 0.1;
-        }
+        background: blue;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0;
       }
 
-      .thumbnail {
-        width: 100%;
+      &:hover::after {
+        opacity: 0.1;
       }
+    }
+
+    .thumbnail {
+      display: block;
+      width: 100%;
     }
   }
 }

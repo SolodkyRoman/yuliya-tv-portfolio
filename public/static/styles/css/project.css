@@ -40,6 +40,7 @@
 }
 html {
   cursor: url(../../images/arrow.png), auto;
+  min-width: 1200px;
 }
 
 ::selection {
@@ -95,7 +96,7 @@ a {
 }
 .header .logo .name {
   overflow: hidden;
-  width: 30px;
+  width: 29px;
   transition: all 0.2s;
 }
 .header .logo:hover .name {
@@ -233,18 +234,18 @@ a {
 .project-page .project-pictures {
   margin-top: 60px;
 }
-.project-page .project-pictures .project-illustration {
+.project-page .project-illustration {
   margin-bottom: 30px;
   width: 100%;
 }
-.project-page .project-pictures .project-illustration-split {
+.project-page .project-illustration-split {
   display: flex;
 }
-.project-page .project-pictures .project-illustration-split .project-illustration {
+.project-page .project-illustration-split .project-illustration {
   max-width: 50%;
   min-width: 0;
 }
-.project-page .project-pictures .project-illustration-split .project-illustration:not(:last-child) {
+.project-page .project-illustration-split .project-illustration:not(:last-child) {
   margin-right: 30px;
 }
 .project-page .more-projects {
@@ -264,16 +265,19 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.project-page .other-projects-gallery .project-link {
+.project-page .project-link {
   height: 276px;
 }
-.project-page .other-projects-gallery .project-link .project-thumbnail {
+.project-page .project-link:hover .thumbnail-hover {
+  opacity: 1;
+}
+.project-page .project-thumbnail {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover {
+.project-page .thumbnail-hover {
   position: absolute;
   left: 0;
   right: 0;
@@ -285,11 +289,11 @@ a {
   justify-content: center;
   align-items: center;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover .project-name {
+.project-page .thumbnail-hover .project-name {
   color: white;
   font-size: 30px;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover .project-label {
+.project-page .thumbnail-hover .project-label {
   font-family: Inter, sans-serif;
   font-weight: 200;
   font-size: 14px;
@@ -297,9 +301,6 @@ a {
   color: white;
   bottom: 30px;
   margin: 0 40px;
-}
-.project-page .other-projects-gallery .project-link:hover .thumbnail-hover {
-  opacity: 1;
 }
 
 /*# sourceMappingURL=project.css.map */

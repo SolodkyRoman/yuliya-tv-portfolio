@@ -40,6 +40,7 @@
 }
 html {
   cursor: url(../../images/arrow.png), auto;
+  min-width: 1200px;
 }
 
 ::selection {
@@ -95,7 +96,7 @@ a {
 }
 .header .logo .name {
   overflow: hidden;
-  width: 30px;
+  width: 29px;
   transition: all 0.2s;
 }
 .header .logo:hover .name {
@@ -222,37 +223,37 @@ a {
 .home-page .works {
   margin-top: 100px;
 }
-.home-page .works .project {
+.home-page .project {
   margin-bottom: 120px;
 }
-.home-page .works .project .meta {
+.home-page .project .meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.home-page .works .project .divider {
+.home-page .project .divider {
   height: 1px;
   margin: 0 37px;
   flex-grow: 1;
   background: blue;
 }
-.home-page .works .project .name {
+.home-page .project .name {
   font-size: 40px;
 }
-.home-page .works .project .categories {
+.home-page .project .categories {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
 }
-.home-page .works .project .categories .category:not(:first-child) {
+.home-page .project .categories .category:not(:first-child) {
   margin-left: 40px;
 }
-.home-page .works .project .project-link {
+.home-page .project .project-link {
   margin-top: 50px;
   display: block;
   position: relative;
 }
-.home-page .works .project .project-link::after {
+.home-page .project .project-link::after {
   content: "";
   display: block;
   background: blue;
@@ -263,10 +264,11 @@ a {
   top: 0;
   opacity: 0;
 }
-.home-page .works .project .project-link:hover::after {
+.home-page .project .project-link:hover::after {
   opacity: 0.1;
 }
-.home-page .works .project .thumbnail {
+.home-page .project .thumbnail {
+  display: block;
   width: 100%;
 }
 

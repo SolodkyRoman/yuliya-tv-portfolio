@@ -1,98 +1,123 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Project</title>
+
+<head>
+    <title>Visual experiments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/styles/css/experiments.css" />
-    <script src="/static/js/components/header.js"></script>
-    <script
-      src="/static/js/components/project-details.js"
-      type="module"
-    ></script>
-    <script src="/static/js/components/more-projects.js" type="module"></script>
-    <script
-      src="/static/js/components/project-images.js"
-      type="module"
-    ></script>
-  </head>
-  <body class="project-page">
+
+    <link rel="stylesheet" href="static/styles/css/experiments.css" />
+</head>
+
+<body class="project-page">
     <div id="preloader" class="preloader active">
-      <div class="loader"></div>
+        <div class="loader"></div>
     </div>
     <div class="container">
-      <header-component></header-component>
-      <project-details-component></project-details-component>
-      <div class="project-pictures">
-        <div class="project-illustration-split">
-          <img
-            class="project-illustration split"
-            src="/static/images/projects/experiments/nothing matters 2.jpg"
-            alt="Independence day poster 1,Independence day poster 2"
-          /><img
-            class="project-illustration split"
-            src="/static/images/projects/experiments/do nothing in every possible moment 2.jpg"
-            alt="Independence day poster 1,Independence day poster 2"
-          />
+        <header class="header">
+            <a href="index.html" class="logo">
+                <span class="name">Yulia</span>
+                <span class="surname">Tverdokhlib</span>
+            </a>
+            <div class="line"></div>
+            <ul class="navigation">
+                <li class="navigation-item">
+                    <a href="index.html#projects" class="navigation-link">Projects</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="about.html" class="navigation-link">About</a>
+                </li>
+            </ul>
+        </header>        <div class="project-details">
+            <div class="project-info">
+                <h1 class="project-name">Visual experiments</h1>
+                <div class="project-categories">
+                    <span>Logo</span>
+                    <span>Identity</span>
+                    <span>Packaging design</span>
+                </div>
+                <div class="project-description">
+                    <p class="paragraph">Peppy Cosmetics is a brand of teen makeup. The identity and packaging was inspired by the teen girl magazines and TV show aesthetics of late 90s and early 00s. The task was to create a standout branding that could translate the spirit of teenagers - the spirit of freedom, creativity and individuality. It is so crucial for our packaging to stand out, same as for teens who dye their hair, experiment with makeup and clothes to find their unique style.</p>
+                </div>
+            </div>
+            <div class="project-credentials">
+                <p class="project-row"><b>Client</b>: Personal Project</p>
+                <p class="project-row"><b>Role</b>: Art Direction/Graphic Design</p>
+            </div>
         </div>
-        <div class="trust-animation">
-          <img
-            class="project-trust-illustration"
-            src="/static/images/projects/experiments/trust.gif"
-            alt="Trust animation"
-          />
-        </div>
-        <div class="trust-van">
-          <img
-            class="project-trust-illustration"
-            src="/static/images/projects/experiments/traffic_van.png"
-            alt="Trust van"
-          />
-        </div>
-        <div class="posters">
-          <img
-            src="/static/images/projects/experiments/function_poster.png"
-            alt="Poster"
-          />
-          <img
-            src="/static/images/projects/experiments/yuliya_poster.png"
-            alt="Poster"
-          />
-        </div>
-        <div class="photos">
-          <div class="photos-row">
-            <img
-              src="/static/images/projects/experiments/photo_1.png"
-              alt="Photo 1"
-            />
-            <img
-              src="/static/images/projects/experiments/photo_2.png"
-              alt="Photo 2"
-            />
-          </div>
-          <div class="photos-row second">
-            <img
-              src="/static/images/projects/experiments/photo_3.png"
-              alt="Photo 3"
-            />
-            <img
-              src="/static/images/projects/experiments/photo_4.png"
-              alt="Photo 4"
-            />
-          </div>
-        </div>
-        <img
-          class="color-experiment"
-          src="/static/images/projects/experiments/color.png"
-          alt="Color experiment"
-        />
-        <div class="be-real">
-          <img
-            src="/static/images/projects/experiments/be_real.gif"
-            alt="Be real poster"
-          />
-        </div>
-      </div>
-      <more-projects-component></more-projects-component>
-    </div>
-    <script src="/static/js/project-page.js" type="module"></script>
-  </body>
+
+        <div class="project-pictures">
+            <div class="project-illustration-split">
+                <img class="project-illustration split" src="static/images/projects/experiments/nothing matters 2.png"
+                    alt="Independence day poster 1,Independence day poster 2" /><img class="project-illustration split"
+                    src="static/images/projects/experiments/do nothing in every possible moment 2.png"
+                    alt="Independence day poster 1,Independence day poster 2" />
+            </div>
+            <div class="trust-animation">
+                <video autoplay loop muted playsinline class="project-trust-illustration">
+                    <source src="static/images/projects/experiments/trust.webm" type="video/webm" />
+                </video>
+            </div>
+            <div class="trust-van">
+                <img class="project-trust-illustration" src="static/images/projects/experiments/traffic_van.png"
+                    alt="Trust van" />
+            </div>
+            <div class="posters">
+                <img class="function-poster" src="static/images/projects/experiments/function_poster.png" alt="Poster" />
+                <img class="jules-poster" src="static/images/projects/experiments/yuliya_poster.png" alt="Poster" />
+            </div>
+            <div class="photos">
+                <div class="photos-row">
+                    <img src="static/images/projects/experiments/photo_1.png" alt="Photo 1" />
+                    <img src="static/images/projects/experiments/photo_2.png" alt="Photo 2" />
+                </div>
+                <div class="photos-row second">
+                    <img src="static/images/projects/experiments/photo_3.png" alt="Photo 3" />
+                    <img src="static/images/projects/experiments/photo_4.png" alt="Photo 4" />
+                </div>
+            </div>
+            <img class="color-experiment" src="static/images/projects/experiments/color.png" alt="Color experiment" />
+            <div class="be-real">
+                <img src="static/images/projects/experiments/be_real.gif" alt="Be real poster" />
+            </div>
+        </div>        <div class="more-projects">
+            <h2 class="more-heading">More projects</h2>
+            <div class="other-projects-gallery">
+                <a href="posters.html" class="project-link">
+                    <img src="static/images/projects/posters/war-in-ukraine.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">War in Ukraine</h3>
+                        <span class="project-label">
+                            Poster design</span>
+                    </div>
+                </a>
+                <a href="utopia-house.html" class="project-link">
+                    <img src="static/images/projects/utopia/utopia-smiles.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Utopia Haus</h3>
+                        <span class="project-label">
+                            Packaging design</span>
+                    </div>
+                </a>
+                <a href="limozh.html" class="project-link">
+                    <img src="static/images/projects/limozh/limoge-small.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Limozh</h3>
+                        <span class="project-label">
+                            Logo / Identity / Packaging design</span>
+                    </div>
+                </a>
+                <a href="peppy.html" class="project-link">
+                    <img src="static/images/projects/peppy/peppy-boxes.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Peppy</h3>
+                        <span class="project-label">
+                            Logo / Identity</span>
+                    </div>
+                </a>
+            </div>
+        </div>    </div>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/project-page.js"></script>
+</body>
+
 </html>

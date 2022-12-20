@@ -1,213 +1,165 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Utopia</title>
+
+<head>
+    <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/styles/css/about.css" />
-    <script src="/static/js/components/header.js"></script>
-    <script
-      src="/static/js/components/project-details.js"
-      type="module"
-    ></script>
-    <script src="/static/js/components/more-projects.js" type="module"></script>
-    <script
-      src="/static/js/components/project-images.js"
-      type="module"
-    ></script>
-  </head>
-  <body class="about-page">
+    <link rel="stylesheet" href="static/styles/css/about.css" />
+</head>
+
+<body class="about-page">
     <div class="container">
-      <header-component></header-component>
-      <div class="about-content">
-        <div class="column">
-          <img src="/images/julin.jpg" alt="Yuliya" class="avatar" />
-          <div class="skills">
-            <div class="skills-column">
-              <h3 class="skills-heading">Sphere of interest:</h3>
-              <ul class="skills-list">
-                <li class="skills-item">Beauty</li>
-                <li class="skills-item">Fashion</li>
-                <li class="skills-item">HoReCa</li>
-                <li class="skills-item">Wellness</li>
-                <li class="skills-item">Responsible business</li>
-                <li class="skills-item">Culture</li>
-                <li class="skills-item">Entertainment</li>
-              </ul>
+        <header class="header">
+            <a href="index.html" class="logo">
+                <span class="name">Yulia</span>
+                <span class="surname">Tverdokhlib</span>
+            </a>
+            <div class="line"></div>
+            <ul class="navigation">
+                <li class="navigation-item">
+                    <a href="index.html#projects" class="navigation-link">Projects</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="about.html" class="navigation-link">About</a>
+                </li>
+            </ul>
+        </header>        <div class="about-content">
+            <div class="column">
+                <img src="/images/julin.jpg" alt="Yuliya" class="avatar" />
+                <div class="skills">
+                    <div class="skills-column">
+                        <h3 class="skills-heading">Sphere of interest:</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">Beauty</li>
+                            <li class="skills-item">Fashion</li>
+                            <li class="skills-item">HoReCa</li>
+                            <li class="skills-item">Wellness</li>
+                            <li class="skills-item">Responsible business</li>
+                            <li class="skills-item">Culture</li>
+                            <li class="skills-item">Entertainment</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3 class="skills-heading"><b>Specialization:</b></h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">Brand identity</li>
+                            <li class="skills-item">Packaging</li>
+                            <li class="skills-item">Logo design</li>
+                            <li class="skills-item">Illustration</li>
+                            <li class="skills-item">Social media design</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="skills-column">
-              <h3 class="skills-heading"><b>Specialization:</b></h3>
-              <ul class="skills-list">
-                <li class="skills-item">Brand identity</li>
-                <li class="skills-item">Packaging</li>
-                <li class="skills-item">Logo design</li>
-                <li class="skills-item">Illustration</li>
-                <li class="skills-item">Social media design</li>
-              </ul>
+            <div class="column">
+                <h1 class="intro-heading">
+                    Hi! My name is Yuliya Tverdokhlib and I am graphic designer &
+                    illustrator from Ukraine
+                </h1>
+                <p class="paragraph">
+                    Currently, I am living in Los Angeles and working as an independent
+                    brand identity and packaging designer. I have experience working as
+                    an in-house designer, designer in an advertising agency, as well as
+                    a freelance designer with more than 4 years of practice in the
+                    field. My main focus is developing a thoughtful brand identity
+                    driven by powerful ideas.
+                </p>
+                <p class="paragraph">
+                    My primary belief is that design can be used as a powerful tool to
+                    make our life not only more beautiful but happy, safe, conscious,
+                    and human-oriented. I am passionate about creating responsible
+                    brands and advertisements, educating people, and bringing new
+                    visions to life.
+                </p>
+                <p class="paragraph">
+                    I am an experimenter in mind and always looking for new approaches
+                    in work.
+                </p>
+                <p class="paragraph">
+                    If your project or business shares my values, feel free to drop me a
+                    line :)
+                </p>
+                <h2 class="contact-heading">Contact me</h2>
+                <a href="mailto:yuliya.tverdohlib@gmail.com" class="email-link">yuliya.tverdohlib@gmail.com</a>
+                <div class="socials">
+                    <a href="#" class="social-link">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="29" height="29" fill="white" />
+                            <g clip-path="url(#clip0_71_93)">
+                                <path
+                                    d="M14.4936 2.60602C18.3705 2.60602 18.8198 2.61886 20.3475 2.69588C21.7596 2.76007 22.5299 2.99115 23.0434 3.19655C23.7238 3.4533 24.1988 3.77424 24.7123 4.2749C25.2258 4.7884 25.5339 5.26339 25.7906 5.94378C25.9832 6.45728 26.2271 7.22753 26.2913 8.63966C26.3555 10.1673 26.3811 10.6295 26.3811 14.4936C26.3811 18.3577 26.3683 18.8198 26.2913 20.3475C26.2271 21.7596 25.996 22.5299 25.7906 23.0434C25.5339 23.7238 25.2129 24.1988 24.7123 24.7123C24.2116 25.2258 23.7238 25.5339 23.0434 25.7906C22.5299 25.9832 21.7596 26.2271 20.3475 26.2913C18.8198 26.3555 18.3577 26.3811 14.4936 26.3811C10.6295 26.3811 10.1673 26.3683 8.63966 26.2913C7.22753 26.2271 6.45728 25.996 5.94378 25.7906C5.26339 25.5339 4.7884 25.2129 4.2749 24.7123C3.7614 24.1988 3.4533 23.7238 3.19655 23.0434C3.00398 22.5299 2.76007 21.7596 2.69588 20.3475C2.6317 18.8198 2.60602 18.3577 2.60602 14.4936C2.60602 10.6295 2.61886 10.1673 2.69588 8.63966C2.76007 7.22753 2.99115 6.45728 3.19655 5.94378C3.4533 5.26339 3.77424 4.7884 4.2749 4.2749C4.7884 3.7614 5.26339 3.4533 5.94378 3.19655C6.45728 3.00398 7.22753 2.76007 8.63966 2.69588C10.1673 2.6317 10.6295 2.60602 14.4936 2.60602M14.4936 0C10.5525 0 10.0646 0.0128375 8.51129 0.0898628C6.97078 0.15405 5.91811 0.410801 4.9938 0.770252C4.04382 1.14254 3.23506 1.63037 2.42629 2.43913C1.61753 3.2479 1.1297 4.05666 0.757415 5.00664C0.397964 5.93094 0.15405 6.98362 0.0898628 8.52412C0.0128375 10.0646 0 10.5653 0 14.5064C0 18.4475 0.0128375 18.9354 0.0898628 20.4887C0.15405 22.0292 0.410801 23.0819 0.757415 24.0062C1.1297 24.9562 1.61753 25.7649 2.42629 26.5737C3.23506 27.3825 4.04382 27.8703 4.9938 28.2426C5.91811 28.602 6.97078 28.8459 8.51129 28.923C10.0518 28.9872 10.5525 29.0128 14.4936 29.0128C18.4347 29.0128 18.9225 29 20.4759 28.923C22.0164 28.8588 23.0691 28.602 23.9934 28.2426C24.9433 27.8703 25.7521 27.3825 26.5609 26.5737C27.3696 25.7649 27.8575 24.9562 28.2297 24.0062C28.5892 23.0819 28.8331 22.0292 28.8973 20.4887C28.9615 18.9482 28.9872 18.4475 28.9872 14.5064C28.9872 10.5653 28.9743 10.0775 28.8973 8.52412C28.8331 6.98362 28.5764 5.93094 28.2297 5.00664C27.8575 4.05666 27.3696 3.2479 26.5609 2.43913C25.7521 1.63037 24.9433 1.14254 23.9934 0.770252C23.0691 0.410801 22.0164 0.166888 20.4759 0.0898628C18.9354 0.0256751 18.4347 0 14.4936 0"
+                                    fill="#000AFF" />
+                                <path
+                                    d="M14.4936 7.04779C10.3856 7.04779 7.04785 10.3856 7.04785 14.4936C7.04785 18.6016 10.3856 21.9393 14.4936 21.9393C18.6016 21.9393 21.9394 18.6016 21.9394 14.4936C21.9394 10.3856 18.6016 7.04779 14.4936 7.04779ZM14.4936 19.3205C11.8234 19.3205 9.66671 17.1509 9.66671 14.4936C9.66671 11.8362 11.8363 9.66665 14.4936 9.66665C17.151 9.66665 19.3205 11.8362 19.3205 14.4936C19.3205 17.1509 17.151 19.3205 14.4936 19.3205Z"
+                                    fill="#000AFF" />
+                                <path
+                                    d="M23.9801 6.76538C23.9801 7.72819 23.197 8.51128 22.2342 8.51128C21.2714 8.51128 20.4883 7.72819 20.4883 6.76538C20.4883 5.80256 21.2714 5.01947 22.2342 5.01947C23.197 5.01947 23.9801 5.80256 23.9801 6.76538Z"
+                                    fill="#000AFF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_71_93">
+                                    <rect width="29" height="29" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="29" height="29" fill="white" />
+                            <g clip-path="url(#clip0_71_92)">
+                                <path
+                                    d="M10.6612 22.937C11.4477 22.7731 12.1218 22.4706 12.6961 22.0294C13.2079 21.6387 13.6324 21.1723 13.9694 20.605C14.5062 19.7479 14.7684 18.7773 14.7684 17.7059C14.7684 16.6344 14.5312 15.7773 14.0693 15.0462C13.6074 14.3151 12.9083 13.7857 11.9845 13.4454C12.5837 13.1302 13.0456 12.7899 13.3577 12.4118C13.907 11.7437 14.1941 10.8487 14.1941 9.73949C14.1941 8.63025 13.9195 7.73529 13.3702 6.96638C12.4589 5.70588 10.8984 5.06302 8.70125 5.02521H0V23.1765H8.11451C9.02583 23.1765 9.87473 23.0882 10.6612 22.9244V22.937ZM3.59535 8.15126H7.51528C8.37667 8.15126 9.08825 8.23949 9.63754 8.44117C10.2867 8.70588 10.6113 9.27311 10.6113 10.1176C10.6113 10.8866 10.3616 11.416 9.87473 11.7185C9.38786 12.021 8.75118 12.1723 7.9647 12.1723H3.59535V8.15126ZM3.59535 20.0126V15.1723H8.02712C8.80112 15.1723 9.40034 15.2857 9.8248 15.4748C10.5863 15.8277 10.9733 16.4832 10.9733 17.4286C10.9733 18.5504 10.5738 19.3067 9.78734 19.6975C9.35041 19.9118 8.7387 20.0126 7.9647 20.0126H3.59535Z"
+                                    fill="#000AFF" />
+                                <path
+                                    d="M17.8142 21.979C19.1624 23.0882 20.7354 23.6302 22.5081 23.6302C24.6553 23.6302 26.3282 22.9748 27.5141 21.6638C28.2881 20.8445 28.7126 20.0252 28.8 19.2311H25.2421C25.0298 19.6218 24.7926 19.937 24.5305 20.1512C24.0311 20.5672 23.3944 20.7689 22.5955 20.7689C21.8465 20.7689 21.2098 20.605 20.673 20.2647C19.7991 19.7227 19.3372 18.7773 19.2748 17.4286H28.9747C28.9872 16.2689 28.9498 15.3739 28.8624 14.7563C28.7001 13.6975 28.3505 12.7773 27.8013 11.9832C27.202 11.0756 26.428 10.4075 25.5042 9.99158C24.5804 9.57561 23.5318 9.36133 22.3708 9.36133C20.4233 9.36133 18.8378 9.97898 17.6144 11.2269C16.391 12.4622 15.7793 14.2521 15.7793 16.584C15.7793 19.0672 16.4534 20.8697 17.8142 21.9664V21.979ZM20.2985 13.042C20.7853 12.5252 21.4844 12.2731 22.3708 12.2731C23.1947 12.2731 23.8813 12.5126 24.4306 12.9916C24.9799 13.4706 25.292 14.1891 25.3544 15.1218H19.3622C19.487 14.2521 19.7991 13.5588 20.286 13.042H20.2985Z"
+                                    fill="#000AFF" />
+                                <path d="M26.0657 6.0462H18.2383V7.88654H26.0657V6.0462Z" fill="#000AFF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_71_92">
+                                    <rect width="29" height="18.6429" fill="white" transform="translate(0 5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="" class="social-link">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="29" height="29" fill="white" />
+                            <g clip-path="url(#clip0_71_91)">
+                                <path
+                                    d="M11.2715 26H15.6319V14.9116H18.678L19 11.2008H15.6319V9.08916C15.6319 8.21446 15.8059 7.86988 16.6414 7.86988H19V4H15.98C12.7337 4 11.2715 5.449 11.2715 8.23213V11.192H9V14.9558H11.2715V26Z"
+                                    fill="#000AFF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_71_91">
+                                    <rect width="10" height="22" fill="white" transform="translate(9 4)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="29" height="29" fill="white" />
+                            <g clip-path="url(#clip0_71_90)">
+                                <path d="M8.7492 10.0034H4.41699V24H8.7492V10.0034Z" fill="#000AFF" />
+                                <path
+                                    d="M6.56271 8.1636C7.97627 8.1636 9.12542 7.00484 9.12542 5.5818C9.12542 4.15876 7.97627 3 6.56271 3C5.14915 3 4 4.15876 4 5.5818C4 7.00484 5.14915 8.1636 6.56271 8.1636Z"
+                                    fill="#000AFF" />
+                                <path
+                                    d="M15.6847 16.651C15.6847 14.6791 16.5898 13.5102 18.3288 13.5102C19.9254 13.5102 20.6881 14.6384 20.6881 16.651V24H25V15.1365C25 11.3858 22.8745 9.57648 19.9051 9.57648C16.9356 9.57648 15.6847 11.894 15.6847 11.894V10.0034H11.5254V24H15.6847V16.651Z"
+                                    fill="#000AFF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_71_90">
+                                    <rect width="21" height="21" fill="white" transform="translate(4 3)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="column">
-          <h1 class="intro-heading">
-            Hi! My name is Yuliya Tverdokhlib and I am graphic designer &
-            illustrator from Ukraine
-          </h1>
-          <p class="paragraph">
-            Currently, I am living in Los Angeles and working as an independent
-            brand identity and packaging designer. I have experience working as
-            an in-house designer, designer in an advertising agency, as well as
-            a freelance designer with more than 4 years of practice in the
-            field. My main focus is developing a thoughtful brand identity
-            driven by powerful ideas.
-          </p>
-          <p class="paragraph">
-            My primary belief is that design can be used as a powerful tool to
-            make our life not only more beautiful but happy, safe, conscious,
-            and human-oriented. I am passionate about creating responsible
-            brands and advertisements, educating people, and bringing new
-            visions to life.
-          </p>
-          <p class="paragraph">
-            I am an experimenter in mind and always looking for new approaches
-            in work.
-          </p>
-          <p class="paragraph">
-            If your project or business shares my values, feel free to drop me a
-            line :)
-          </p>
-          <h2 class="contact-heading">Contact me</h2>
-          <a href="mailto:yuliya.tverdohlib@gmail.com" class="email-link"
-            >yuliya.tverdohlib@gmail.com</a
-          >
-          <div class="socials">
-            <a href="#" class="social-link">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="29" height="29" fill="white" />
-                <g clip-path="url(#clip0_71_93)">
-                  <path
-                    d="M14.4936 2.60602C18.3705 2.60602 18.8198 2.61886 20.3475 2.69588C21.7596 2.76007 22.5299 2.99115 23.0434 3.19655C23.7238 3.4533 24.1988 3.77424 24.7123 4.2749C25.2258 4.7884 25.5339 5.26339 25.7906 5.94378C25.9832 6.45728 26.2271 7.22753 26.2913 8.63966C26.3555 10.1673 26.3811 10.6295 26.3811 14.4936C26.3811 18.3577 26.3683 18.8198 26.2913 20.3475C26.2271 21.7596 25.996 22.5299 25.7906 23.0434C25.5339 23.7238 25.2129 24.1988 24.7123 24.7123C24.2116 25.2258 23.7238 25.5339 23.0434 25.7906C22.5299 25.9832 21.7596 26.2271 20.3475 26.2913C18.8198 26.3555 18.3577 26.3811 14.4936 26.3811C10.6295 26.3811 10.1673 26.3683 8.63966 26.2913C7.22753 26.2271 6.45728 25.996 5.94378 25.7906C5.26339 25.5339 4.7884 25.2129 4.2749 24.7123C3.7614 24.1988 3.4533 23.7238 3.19655 23.0434C3.00398 22.5299 2.76007 21.7596 2.69588 20.3475C2.6317 18.8198 2.60602 18.3577 2.60602 14.4936C2.60602 10.6295 2.61886 10.1673 2.69588 8.63966C2.76007 7.22753 2.99115 6.45728 3.19655 5.94378C3.4533 5.26339 3.77424 4.7884 4.2749 4.2749C4.7884 3.7614 5.26339 3.4533 5.94378 3.19655C6.45728 3.00398 7.22753 2.76007 8.63966 2.69588C10.1673 2.6317 10.6295 2.60602 14.4936 2.60602M14.4936 0C10.5525 0 10.0646 0.0128375 8.51129 0.0898628C6.97078 0.15405 5.91811 0.410801 4.9938 0.770252C4.04382 1.14254 3.23506 1.63037 2.42629 2.43913C1.61753 3.2479 1.1297 4.05666 0.757415 5.00664C0.397964 5.93094 0.15405 6.98362 0.0898628 8.52412C0.0128375 10.0646 0 10.5653 0 14.5064C0 18.4475 0.0128375 18.9354 0.0898628 20.4887C0.15405 22.0292 0.410801 23.0819 0.757415 24.0062C1.1297 24.9562 1.61753 25.7649 2.42629 26.5737C3.23506 27.3825 4.04382 27.8703 4.9938 28.2426C5.91811 28.602 6.97078 28.8459 8.51129 28.923C10.0518 28.9872 10.5525 29.0128 14.4936 29.0128C18.4347 29.0128 18.9225 29 20.4759 28.923C22.0164 28.8588 23.0691 28.602 23.9934 28.2426C24.9433 27.8703 25.7521 27.3825 26.5609 26.5737C27.3696 25.7649 27.8575 24.9562 28.2297 24.0062C28.5892 23.0819 28.8331 22.0292 28.8973 20.4887C28.9615 18.9482 28.9872 18.4475 28.9872 14.5064C28.9872 10.5653 28.9743 10.0775 28.8973 8.52412C28.8331 6.98362 28.5764 5.93094 28.2297 5.00664C27.8575 4.05666 27.3696 3.2479 26.5609 2.43913C25.7521 1.63037 24.9433 1.14254 23.9934 0.770252C23.0691 0.410801 22.0164 0.166888 20.4759 0.0898628C18.9354 0.0256751 18.4347 0 14.4936 0"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M14.4936 7.04779C10.3856 7.04779 7.04785 10.3856 7.04785 14.4936C7.04785 18.6016 10.3856 21.9393 14.4936 21.9393C18.6016 21.9393 21.9394 18.6016 21.9394 14.4936C21.9394 10.3856 18.6016 7.04779 14.4936 7.04779ZM14.4936 19.3205C11.8234 19.3205 9.66671 17.1509 9.66671 14.4936C9.66671 11.8362 11.8363 9.66665 14.4936 9.66665C17.151 9.66665 19.3205 11.8362 19.3205 14.4936C19.3205 17.1509 17.151 19.3205 14.4936 19.3205Z"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M23.9801 6.76538C23.9801 7.72819 23.197 8.51128 22.2342 8.51128C21.2714 8.51128 20.4883 7.72819 20.4883 6.76538C20.4883 5.80256 21.2714 5.01947 22.2342 5.01947C23.197 5.01947 23.9801 5.80256 23.9801 6.76538Z"
-                    fill="#000AFF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_71_93">
-                    <rect width="29" height="29" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="social-link">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="29" height="29" fill="white" />
-                <g clip-path="url(#clip0_71_92)">
-                  <path
-                    d="M10.6612 22.937C11.4477 22.7731 12.1218 22.4706 12.6961 22.0294C13.2079 21.6387 13.6324 21.1723 13.9694 20.605C14.5062 19.7479 14.7684 18.7773 14.7684 17.7059C14.7684 16.6344 14.5312 15.7773 14.0693 15.0462C13.6074 14.3151 12.9083 13.7857 11.9845 13.4454C12.5837 13.1302 13.0456 12.7899 13.3577 12.4118C13.907 11.7437 14.1941 10.8487 14.1941 9.73949C14.1941 8.63025 13.9195 7.73529 13.3702 6.96638C12.4589 5.70588 10.8984 5.06302 8.70125 5.02521H0V23.1765H8.11451C9.02583 23.1765 9.87473 23.0882 10.6612 22.9244V22.937ZM3.59535 8.15126H7.51528C8.37667 8.15126 9.08825 8.23949 9.63754 8.44117C10.2867 8.70588 10.6113 9.27311 10.6113 10.1176C10.6113 10.8866 10.3616 11.416 9.87473 11.7185C9.38786 12.021 8.75118 12.1723 7.9647 12.1723H3.59535V8.15126ZM3.59535 20.0126V15.1723H8.02712C8.80112 15.1723 9.40034 15.2857 9.8248 15.4748C10.5863 15.8277 10.9733 16.4832 10.9733 17.4286C10.9733 18.5504 10.5738 19.3067 9.78734 19.6975C9.35041 19.9118 8.7387 20.0126 7.9647 20.0126H3.59535Z"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M17.8142 21.979C19.1624 23.0882 20.7354 23.6302 22.5081 23.6302C24.6553 23.6302 26.3282 22.9748 27.5141 21.6638C28.2881 20.8445 28.7126 20.0252 28.8 19.2311H25.2421C25.0298 19.6218 24.7926 19.937 24.5305 20.1512C24.0311 20.5672 23.3944 20.7689 22.5955 20.7689C21.8465 20.7689 21.2098 20.605 20.673 20.2647C19.7991 19.7227 19.3372 18.7773 19.2748 17.4286H28.9747C28.9872 16.2689 28.9498 15.3739 28.8624 14.7563C28.7001 13.6975 28.3505 12.7773 27.8013 11.9832C27.202 11.0756 26.428 10.4075 25.5042 9.99158C24.5804 9.57561 23.5318 9.36133 22.3708 9.36133C20.4233 9.36133 18.8378 9.97898 17.6144 11.2269C16.391 12.4622 15.7793 14.2521 15.7793 16.584C15.7793 19.0672 16.4534 20.8697 17.8142 21.9664V21.979ZM20.2985 13.042C20.7853 12.5252 21.4844 12.2731 22.3708 12.2731C23.1947 12.2731 23.8813 12.5126 24.4306 12.9916C24.9799 13.4706 25.292 14.1891 25.3544 15.1218H19.3622C19.487 14.2521 19.7991 13.5588 20.286 13.042H20.2985Z"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M26.0657 6.0462H18.2383V7.88654H26.0657V6.0462Z"
-                    fill="#000AFF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_71_92">
-                    <rect
-                      width="29"
-                      height="18.6429"
-                      fill="white"
-                      transform="translate(0 5)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="" class="social-link">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="29" height="29" fill="white" />
-                <g clip-path="url(#clip0_71_91)">
-                  <path
-                    d="M11.2715 26H15.6319V14.9116H18.678L19 11.2008H15.6319V9.08916C15.6319 8.21446 15.8059 7.86988 16.6414 7.86988H19V4H15.98C12.7337 4 11.2715 5.449 11.2715 8.23213V11.192H9V14.9558H11.2715V26Z"
-                    fill="#000AFF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_71_91">
-                    <rect
-                      width="10"
-                      height="22"
-                      fill="white"
-                      transform="translate(9 4)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="social-link">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="29" height="29" fill="white" />
-                <g clip-path="url(#clip0_71_90)">
-                  <path
-                    d="M8.7492 10.0034H4.41699V24H8.7492V10.0034Z"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M6.56271 8.1636C7.97627 8.1636 9.12542 7.00484 9.12542 5.5818C9.12542 4.15876 7.97627 3 6.56271 3C5.14915 3 4 4.15876 4 5.5818C4 7.00484 5.14915 8.1636 6.56271 8.1636Z"
-                    fill="#000AFF"
-                  />
-                  <path
-                    d="M15.6847 16.651C15.6847 14.6791 16.5898 13.5102 18.3288 13.5102C19.9254 13.5102 20.6881 14.6384 20.6881 16.651V24H25V15.1365C25 11.3858 22.8745 9.57648 19.9051 9.57648C16.9356 9.57648 15.6847 11.894 15.6847 11.894V10.0034H11.5254V24H15.6847V16.651Z"
-                    fill="#000AFF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_71_90">
-                    <rect
-                      width="21"
-                      height="21"
-                      fill="white"
-                      transform="translate(4 3)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

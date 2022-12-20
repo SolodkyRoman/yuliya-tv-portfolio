@@ -1,25 +1,114 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>JulinTv</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/styles/css/home.css" />
-    <script src="static/js/components/header.js"></script>
-    <script src="static/js/components/projects-list.js" type="module"></script>
-  </head>
-  <body class="home-page block-scroll">
-    <div id="preloader" class="preloader active">
-      <div class="loader"></div>
+
+<head>
+  <title>JulinTv</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/styles/css/home.css" />
+</head>
+
+<body class="home-page block-scroll">
+  <div id="preloader" class="preloader active">
+    <div class="loader"></div>
+  </div>
+  <div class="container">
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="name">Yulia</span>
+            <span class="surname">Tverdokhlib</span>
+        </a>
+        <div class="line"></div>
+        <ul class="navigation">
+            <li class="navigation-item">
+                <a href="#projects" class="navigation-link">Projects</a>
+            </li>
+            <li class="navigation-item">
+                <a href="about.html" class="navigation-link">About</a>
+            </li>
+        </ul>
+    </header>    <div class="slider active" id="slider"></div>
+    <div class="about">
+      Yuliya Tverdokhlib is a graphic designer, based in Los Angeles, Some
+      more text here. Some more text here. Some more text here.
     </div>
-    <div class="container">
-      <header-component></header-component>
-      <div class="slider active" id="slider"></div>
-      <div class="about">
-        Yuliya Tverdokhlib is a graphic designer, based in Los Angeles, Some
-        more text here. Some more text here. Some more text here.
-      </div>
-      <projects-list-component></projects-list-component>
-    </div>
-    <script src="static/js/home-page.js" type="module"></script>
-  </body>
+    <div class="works" id="projects">
+        <div class="project">
+            <div class="meta">
+                <div class="name">Utopia Haus</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Packaging design</span>
+                </div>
+            </div>
+            <a href="utopia-house.html" class="project-link">
+                <video autoplay loop muted playsinline class="thumbnail">
+                    <source src="static/images/projects/utopia/utopia-animation.webm" type="video/webm" />
+                </video>
+            </a>
+        </div>
+        <div class="project">
+            <div class="meta">
+                <div class="name">Limozh</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Logo</span>
+                    <span class="category">Identity</span>
+                    <span class="category">Packaging design</span>
+                </div>
+            </div>
+            <a href="limozh.html" class="project-link">
+                <video autoplay loop muted playsinline class="thumbnail">
+                    <source src="static/images/projects/limozh/limozh-animation.webm" type="video/webm" />
+                </video>
+            </a>
+        </div>
+        <div class="project">
+            <div class="meta">
+                <div class="name">Peppy</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Logo</span>
+                    <span class="category">Identity</span>
+                </div>
+            </div>
+            <a href="peppy.html" class="project-link">
+                <img src="static/images/projects/peppy/peppy-happy.png" alt="Utopia Project" class="thumbnail">
+            </a>
+        </div>
+        <div class="project">
+            <div class="meta">
+                <div class="name">War in Ukraine</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Poster design</span>
+                </div>
+            </div>
+            <a href="posters.html" class="project-link">
+                <video autoplay loop muted playsinline class="thumbnail">
+                    <source src="static/images/projects/posters/war-in-ukraine.webm" type="video/webm" />
+                </video>
+            </a>
+        </div>
+        <div class="project">
+            <div class="meta">
+                <div class="name">Visual experiments</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Logo</span>
+                    <span class="category">Identity</span>
+                    <span class="category">Packaging design</span>
+                </div>
+            </div>
+            <a href="experiments.html" class="project-link">
+                <video autoplay loop muted playsinline class="thumbnail">
+                    <source src="static/images/projects/experiments/experiments_animation.webm" type="video/webm" />
+                </video>
+            </a>
+        </div>
+    </div>  </div>
+  <script src="static/js/utils.js"></script>
+  <script src="static/js/home-page.js"></script>
+</body>
+
 </html>

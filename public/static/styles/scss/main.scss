@@ -4,6 +4,7 @@
 
 html {
   cursor: url(../../images/arrow.png), auto;
+  min-width: 1200px;
 }
 
 ::selection {
@@ -61,7 +62,7 @@ a {
 
     .name {
       overflow: hidden;
-      width: 30px;
+      width: 29px;
       transition: all 0.2s;
     }
 

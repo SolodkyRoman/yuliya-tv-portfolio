@@ -55,22 +55,22 @@
 
   .project-pictures {
     margin-top: 60px;
+  }
+
+  .project-illustration {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .project-illustration-split {
+    display: flex;
 
     .project-illustration {
-      margin-bottom: 30px;
-      width: 100%;
-    }
+      max-width: 50%;
+      min-width: 0;
 
-    .project-illustration-split {
-      display: flex;
-
-      .project-illustration {
-        max-width: 50%;
-        min-width: 0;
-
-        &:not(:last-child) {
-          margin-right: 30px;
-        }
+      &:not(:last-child) {
+        margin-right: 30px;
       }
     }
   }
@@ -93,50 +93,49 @@
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
 
-    .project-link {
-      height: 276px;
-
-      .project-thumbnail {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-      }
-
+  .project-link {
+    height: 276px;
+    &:hover {
       .thumbnail-hover {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        opacity: 0;
-        background: variables.$text;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .project-name {
-          color: white;
-          font-size: 30px;
-        }
-
-        .project-label {
-          font-family: Inter, sans-serif;
-          font-weight: 200;
-          font-size: 14px;
-          position: absolute;
-          color: white;
-          bottom: 30px;
-          margin: 0 40px;
-        }
+        opacity: 1;
       }
+    }
+  }
 
-      &:hover {
-        .thumbnail-hover {
-          opacity: 1;
-        }
-      }
+  .project-thumbnail {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .thumbnail-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    background: variables.$text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-name {
+      color: white;
+      font-size: 30px;
+    }
+
+    .project-label {
+      font-family: Inter, sans-serif;
+      font-weight: 200;
+      font-size: 14px;
+      position: absolute;
+      color: white;
+      bottom: 30px;
+      margin: 0 40px;
     }
   }
 }

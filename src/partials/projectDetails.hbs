@@ -1,0 +1,20 @@
+<div class="project-details">
+    <div class="project-info">
+        <h1 class="project-name">{{name}}</h1>
+        <div class="project-categories">
+            {{#each labels}}
+            <span>{{this}}</span>
+            {{/each}}
+        </div>
+        <div class="project-description">
+            {{#each descriptionBlocks}}
+            <p class="paragraph">{{this}}</p>
+            {{/each}}
+        </div>
+    </div>
+    <div class="project-credentials">
+        {{#each credentials}}
+        <p class="project-row"><b>{{this.key}}</b>: {{this.value}}</p>
+        {{/each}}
+    </div>
+</div>

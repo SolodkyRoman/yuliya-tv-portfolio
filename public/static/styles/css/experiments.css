@@ -40,6 +40,7 @@
 }
 html {
   cursor: url(../../images/arrow.png), auto;
+  min-width: 1200px;
 }
 
 ::selection {
@@ -95,7 +96,7 @@ a {
 }
 .header .logo .name {
   overflow: hidden;
-  width: 30px;
+  width: 29px;
   transition: all 0.2s;
 }
 .header .logo:hover .name {
@@ -233,18 +234,18 @@ a {
 .project-page .project-pictures {
   margin-top: 60px;
 }
-.project-page .project-pictures .project-illustration {
+.project-page .project-illustration {
   margin-bottom: 30px;
   width: 100%;
 }
-.project-page .project-pictures .project-illustration-split {
+.project-page .project-illustration-split {
   display: flex;
 }
-.project-page .project-pictures .project-illustration-split .project-illustration {
+.project-page .project-illustration-split .project-illustration {
   max-width: 50%;
   min-width: 0;
 }
-.project-page .project-pictures .project-illustration-split .project-illustration:not(:last-child) {
+.project-page .project-illustration-split .project-illustration:not(:last-child) {
   margin-right: 30px;
 }
 .project-page .more-projects {
@@ -264,16 +265,19 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.project-page .other-projects-gallery .project-link {
+.project-page .project-link {
   height: 276px;
 }
-.project-page .other-projects-gallery .project-link .project-thumbnail {
+.project-page .project-link:hover .thumbnail-hover {
+  opacity: 1;
+}
+.project-page .project-thumbnail {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover {
+.project-page .thumbnail-hover {
   position: absolute;
   left: 0;
   right: 0;
@@ -285,11 +289,11 @@ a {
   justify-content: center;
   align-items: center;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover .project-name {
+.project-page .thumbnail-hover .project-name {
   color: white;
   font-size: 30px;
 }
-.project-page .other-projects-gallery .project-link .thumbnail-hover .project-label {
+.project-page .thumbnail-hover .project-label {
   font-family: Inter, sans-serif;
   font-weight: 200;
   font-size: 14px;
@@ -298,85 +302,72 @@ a {
   bottom: 30px;
   margin: 0 40px;
 }
-.project-page .other-projects-gallery .project-link:hover .thumbnail-hover {
-  opacity: 1;
+
+html {
+  background: #000;
 }
 
 body {
-  color: #fff;
   background: linear-gradient(180deg, #000000 13.66%, #000aff 28.58%, #000000 33.68%);
 }
 
-a {
-  color: #fff;
-}
-
-.header {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .line {
-  background: #fff;
-  height: 0.6px;
-  width: 100%;
-  margin-right: 55px;
-}
 .header .logo {
-  color: #fff;
   background: transparent;
 }
 
-.project-page {
-  margin-bottom: 150px;
-}
-.project-page .project-pictures .project-illustration-split .project-illustration:not(:last-child) {
+.project-page .project-illustration-split .project-illustration:not(:last-child) {
   margin-right: 120px;
 }
-
-.trust-animation {
+.project-page .trust-animation {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
 }
-.trust-animation .project-trust-illustration {
+.project-page .trust-animation .project-trust-illustration {
   max-height: 730px;
 }
-
-.trust-van {
+.project-page .trust-van {
   margin-top: 100px;
   display: flex;
   justify-content: center;
 }
-
-.posters {
+.project-page .trust-van .project-trust-illustration {
+  max-width: 900px;
+}
+.project-page .posters {
   margin-top: 190px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.photos {
+.project-page .posters .function-poster {
+  max-width: 700px;
+}
+.project-page .posters .jules-poster {
+  max-width: 395px;
+}
+.project-page .photos {
   margin-top: 100px;
 }
-.photos .photos-row {
+.project-page .photos .photos-row {
   display: flex;
   align-items: flex-start;
 }
-.photos .photos-row.second img {
+.project-page .photos .photos-row.second img {
   margin-right: 135px;
 }
-
-.color-experiment {
+.project-page .color-experiment {
   height: 800px;
 }
-
-.be-real {
+.project-page .be-real {
   margin-top: 50px;
   padding-right: 50px;
   display: flex;
   justify-content: flex-end;
+}
+
+.preloader {
+  background: #000;
 }
 
 /*# sourceMappingURL=experiments.css.map */

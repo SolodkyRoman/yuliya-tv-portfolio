@@ -1,0 +1,15 @@
+<div class="more-projects">
+    <h2 class="more-heading">More projects</h2>
+    <div class="other-projects-gallery">
+        {{#each this}}
+        <a href="{{this.id}}.html" class="project-link">
+            <img src="{{this.thumbnailSmall}}" alt="{{this.alt}}" class="project-thumbnail">
+            <div class="thumbnail-hover">
+                <h3 class="project-name">{{this.name}}</h3>
+                <span class="project-label">
+                    {{this.labels}}</span>
+            </div>
+        </a>
+        {{/each}}
+    </div>
+</div>

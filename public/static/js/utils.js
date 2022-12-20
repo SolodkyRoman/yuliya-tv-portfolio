@@ -1,38 +1,4 @@
-import { PROJECTS } from './projects-data.js';
-
-const shuffleArray = (array) => {
-  const result = [...array];
-
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-
-  return result;
-};
-
-const getProjectId = () => window.location.pathname.split('/').pop();
-
-const getOthersProjectsList = () => {
-  const projectId = getProjectId();
-  const projects = PROJECTS.filter(({ id }) => id !== projectId);
-
-  return shuffleArray(projects);
-};
-
-const getProject = () => {
-  console.log('het');
-  const projectId = getProjectId();
-  const project = PROJECTS.find(({ id }) => id === projectId);
-  console.log(project);
-  if (!project) {
-    window.location = 'index.html';
-  }
-
-  return project;
-};
-
-const handleAppearanceInViewport = (element, callback) => {
+var handleAppearanceInViewport = (element, callback) => {
   const observer = new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting) {
@@ -40,12 +6,12 @@ const handleAppearanceInViewport = (element, callback) => {
         observer.disconnect();
       }
     },
-    { threshold: 0.3 },
+    { threshold: 0.33 },
   );
   observer.observe(element);
 };
 
-const loadImages = async (images) =>
+var loadImages = async (images) =>
   new Promise((res) => {
     const loadedImages = [];
     let loadedImagesCounter = 0;
@@ -75,23 +41,44 @@ const loadImages = async (images) =>
     });
   });
 
-const showPreloader = () => {
+var loadVideos = async (videoElements) =>
+  new Promise((res) => {
+    if (videoElements.length === 0) {
+      res();
+    }
+
+    let processedVideosNumber = 0;
+
+    const processVideo = (videoElement) => {
+      videoElement.oncanplaythrough = undefined;
+      processedVideosNumber++;
+
+      if (processedVideosNumber === videoElements.length) {
+        res();
+      }
+    };
+
+    [...videoElements].forEach((videoElement) => {
+      videoElement.addEventListener(
+        'error',
+        () => {
+          processVideo(videoElement);
+        },
+        true,
+      );
+
+      videoElement.oncanplaythrough = () => {
+        processVideo(videoElement);
+      };
+    });
+  });
+
+var showPreloader = () => {
   document.body.classList.add('block-scroll');
   document.getElementById('preloader').classList.add('active');
 };
 
-const hidePreloader = () => {
+var hidePreloader = () => {
   document.body.classList.remove('block-scroll');
   document.getElementById('preloader').classList.remove('active');
-};
-
-export {
-  shuffleArray,
-  getProjectId,
-  getOthersProjectsList,
-  getProject,
-  handleAppearanceInViewport,
-  loadImages,
-  showPreloader,
-  hidePreloader,
 };

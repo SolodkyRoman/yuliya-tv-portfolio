@@ -1,0 +1,24 @@
+<div class="works" id="projects">
+    {{#each projects}}
+    <div class="project">
+        <div class="meta">
+            <div class="name">{{name}}</div>
+            <div class="divider"></div>
+            <div class="categories">
+                {{#each labels}}
+                <span class="category">{{this}}</span>
+                {{/each}}
+            </div>
+        </div>
+        <a href="{{id}}.html" class="project-link">
+            {{#if thumbnailBig.animation}}
+            <video autoplay loop muted playsinline class="thumbnail">
+                <source src="{{thumbnailBig.animation}}" type="video/webm" />
+            </video>
+            {{else}}
+            <img src="{{thumbnailBig}}" alt="Utopia Project" class="thumbnail">
+            {{/if}}
+        </a>
+    </div>
+    {{/each}}
+</div>

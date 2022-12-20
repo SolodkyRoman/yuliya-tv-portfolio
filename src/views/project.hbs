@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{project.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#ifnoteq project.id "experiments"}}
+    <link rel="stylesheet" href="static/styles/css/project.css" />
+    {{/ifnoteq}}
+
+    {{#ifeq project.id "experiments"}}
+    <link rel="stylesheet" href="static/styles/css/experiments.css" />
+    {{/ifeq}}
+</head>
+
+<body class="project-page">
+    <div id="preloader" class="preloader active">
+        <div class="loader"></div>
+    </div>
+    <div class="container">
+        {{> header }}
+        {{> projectDetails project }}
+
+        {{#ifnoteq project.id "experiments"}}
+        {{> projectImages project }}
+        {{/ifnoteq}}
+
+        {{#ifeq project.id "experiments"}}
+        {{> experimentsProject}}
+        {{/ifeq}}
+        {{> moreProjects otherProjects }}
+    </div>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/project-page.js"></script>
+</body>
+
+</html>

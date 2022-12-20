@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JulinTv</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/styles/css/home.css" />
+</head>
+
+<body class="home-page block-scroll">
+  <div id="preloader" class="preloader active">
+    <div class="loader"></div>
+  </div>
+  <div class="container">
+    {{> header isHomepage=isHomepage }}
+    <div class="slider active" id="slider"></div>
+    <div class="about">
+      Yuliya Tverdokhlib is a graphic designer, based in Los Angeles, Some
+      more text here. Some more text here. Some more text here.
+    </div>
+    {{> homeProjects }}
+  </div>
+  <script src="static/js/utils.js"></script>
+  <script src="static/js/home-page.js"></script>
+</body>
+
+</html>

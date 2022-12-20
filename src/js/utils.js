@@ -1,17 +1,6 @@
 const fs = require('fs');
 const { PROJECTS } = require('./projects-data');
 const { Handlebars } = require('./handlebars-setup');
-// const Handlebars = require('handlebars');
-// const Handlebars = setupHandlebars();
-
-// const registerPartials = (partialNames) =>
-//   partialNames.forEach((partialName) => {
-//     const partial = fs
-//       .readFileSync(`${__dirname}/../partials/${partialName}.hbs`, 'utf8')
-//       .toString();
-
-//     Handlebars.registerPartial(partialName, partial);
-//   });
 
 const shuffleArray = (array) => {
   const result = [...array];
@@ -31,14 +20,6 @@ const getOthersProjectsList = (projectId) => {
 };
 
 const buildHTML = (inputFilePath, outputFilePath, data) => {
-  // registerPartials([
-  //   'header',
-  //   'homeProjects',
-  //   'projectDetails',
-  //   'projectImages',
-  //   'moreProjects',
-  //   'experimentsProject',
-  // ]);
   const source = fs.readFileSync(inputFilePath, 'utf8').toString();
   const template = Handlebars.compile(source);
 

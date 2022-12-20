@@ -1,8 +1,8 @@
 const IMAGE_CHANGE_INTERVAL_MS = 1300;
 const IMAGES_SLIDES = [
-  'static/images/slides/interior.png',
   'static/images/slides/limozh.png',
   'static/images/slides/nakleika.png',
+  'static/images/slides/interior.png',
   'static/images/slides/peppy.png',
   'static/images/slides/this-is-a-war.png',
   'static/images/slides/malard.png',
@@ -60,6 +60,7 @@ class Slider {
     this.imageNodes = images.reduce((accum, src) => {
       const img = document.createElement('img');
       img.classList.add('slider-item');
+      img.alt = 'Project demo slide';
       img.src = src;
 
       return [...accum, img];

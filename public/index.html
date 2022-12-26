@@ -9,13 +9,22 @@
 </head>
 
 <body class="home-page block-scroll">
-  <div id="preloader" class="preloader active">
+  <script>
+      if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+              navigator.userAgent,
+          ) ||
+          window.outerWidth < 1024
+      ) {
+          window.location.href = "mobile.html";
+      }
+  </script>  <div id="preloader" class="preloader active">
     <div class="loader"></div>
   </div>
   <div class="container">
     <header class="header">
         <a href="index.html" class="logo">
-            <span class="name">Yulia</span>
+            <span class="name">Yuliya</span>
             <span class="surname">Tverdokhlib</span>
         </a>
         <div class="line"></div>
@@ -29,8 +38,8 @@
         </ul>
     </header>    <div class="slider active" id="slider"></div>
     <div class="about">
-      Yuliya Tverdokhlib is a graphic designer, based in Los Angeles, Some
-      more text here. Some more text here. Some more text here.
+      Yuliya Tverdokhlib is Ukrainian graphic designer, based in Los Angeles. Her primary focus is brand identity and
+      packaging design.
     </div>
     <div class="works" id="projects">
         <div class="project">
@@ -39,6 +48,7 @@
                 <div class="divider"></div>
                 <div class="categories">
                     <span class="category">Packaging design</span>
+                    <span class="category">Identity</span>
                 </div>
             </div>
             <a href="utopia-house.html" class="project-link">
@@ -70,6 +80,7 @@
                 <div class="categories">
                     <span class="category">Logo</span>
                     <span class="category">Identity</span>
+                    <span class="category">Packaging design</span>
                 </div>
             </div>
             <a href="peppy.html" class="project-link">
@@ -96,8 +107,8 @@
                 <div class="divider"></div>
                 <div class="categories">
                     <span class="category">Logo</span>
-                    <span class="category">Identity</span>
-                    <span class="category">Packaging design</span>
+                    <span class="category">Poster design</span>
+                    <span class="category">Zine</span>
                 </div>
             </div>
             <a href="experiments.html" class="project-link">

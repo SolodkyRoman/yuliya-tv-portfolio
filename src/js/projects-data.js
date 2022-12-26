@@ -183,6 +183,7 @@ const PROJECT_LABELS = new Map([
   ['identity', 'Identity'],
   ['packaging', 'Packaging design'],
   ['poster_design', 'Poster design'],
+  ['zine', 'Zine'],
 ]);
 
 const PROJECTS_DATA = [
@@ -193,7 +194,7 @@ const PROJECTS_DATA = [
     thumbnailBig: {
       animation: 'static/images/projects/utopia/utopia-animation.webm',
     },
-    labels: [PROJECT_LABELS.get('packaging')],
+    labels: [PROJECT_LABELS.get('packaging'), PROJECT_LABELS.get('identity')],
     descriptionBlocks: [
       'Utopia Haus is a party rental company from Sacramento, California. It delivers smiles with luxury party equipment and bounce houses for different type of celebration in your own unique way.',
       "Utopia Haus' brand and packaging stickers design was meant to create a unique experience and transport client to a different place - a utopia, a place of one's dreams and fantasies, where everything he can imagine is real. The idea was brought to life by whimsical word mark, distorted typography and graphics with optical illusions.",
@@ -244,7 +245,11 @@ const PROJECTS_DATA = [
     name: 'Peppy',
     thumbnailSmall: 'static/images/projects/peppy/peppy-boxes.webp',
     thumbnailBig: 'static/images/projects/peppy/peppy-happy.png',
-    labels: [PROJECT_LABELS.get('logo'), PROJECT_LABELS.get('identity')],
+    labels: [
+      PROJECT_LABELS.get('logo'),
+      PROJECT_LABELS.get('identity'),
+      PROJECT_LABELS.get('packaging'),
+    ],
     descriptionBlocks: [
       'Peppy Cosmetics is a brand of teen makeup. The identity and packaging was inspired by the teen girl magazines and TV show aesthetics of late 90s and early 00s. The task was to create a standout branding that could translate the spirit of teenagers - the spirit of freedom, creativity and individuality. It is so crucial for our packaging to stand out, same as for teens who dye their hair, experiment with makeup and clothes to find their unique style.',
     ],
@@ -291,11 +296,11 @@ const PROJECTS_DATA = [
     },
     labels: [
       PROJECT_LABELS.get('logo'),
-      PROJECT_LABELS.get('identity'),
-      PROJECT_LABELS.get('packaging'),
+      PROJECT_LABELS.get('poster_design'),
+      PROJECT_LABELS.get('zine'),
     ],
     descriptionBlocks: [
-      'Peppy Cosmetics is a brand of teen makeup. The identity and packaging was inspired by the teen girl magazines and TV show aesthetics of late 90s and early 00s. The task was to create a standout branding that could translate the spirit of teenagers - the spirit of freedom, creativity and individuality. It is so crucial for our packaging to stand out, same as for teens who dye their hair, experiment with makeup and clothes to find their unique style.',
+      'The goal of this project was finding the borders of the ugly and beautiful, defining key features of one’s visual style, using new research techniques, looking for new approaches for expressing one’s visual language through experiments. ',
     ],
     credentials: [
       {

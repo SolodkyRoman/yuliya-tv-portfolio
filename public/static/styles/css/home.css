@@ -40,7 +40,6 @@
 }
 html {
   cursor: url(../../images/arrow.png), auto;
-  min-width: 1200px;
 }
 
 ::selection {
@@ -100,7 +99,7 @@ a {
   transition: all 0.2s;
 }
 .header .logo:hover .name {
-  width: 130px;
+  width: 160px;
 }
 .header .logo .surname {
   overflow: hidden;
@@ -215,13 +214,12 @@ a {
   z-index: 1;
 }
 .home-page .about {
-  padding: 20px;
-  margin-top: 80px;
+  margin-top: 100px;
   font-size: 55px;
   line-height: 65px;
 }
 .home-page .works {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .home-page .project {
   margin-bottom: 120px;

@@ -4,7 +4,6 @@
 
 html {
   cursor: url(../../images/arrow.png), auto;
-  min-width: 1200px;
 }
 
 ::selection {
@@ -68,7 +67,7 @@ a {
 
     &:hover {
       .name {
-        width: 130px;
+        width: 160px;
       }
     }
 

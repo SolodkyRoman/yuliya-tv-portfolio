@@ -33,6 +33,7 @@ registerPartials([
   'projectImages',
   'moreProjects',
   'experimentsProject',
+  'smallScreenBanner',
 ]);
 
 module.exports = { Handlebars };

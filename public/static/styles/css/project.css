@@ -40,7 +40,6 @@
 }
 html {
   cursor: url(../../images/arrow.png), auto;
-  min-width: 1200px;
 }
 
 ::selection {
@@ -100,7 +99,7 @@ a {
   transition: all 0.2s;
 }
 .header .logo:hover .name {
-  width: 130px;
+  width: 160px;
 }
 .header .logo .surname {
   overflow: hidden;

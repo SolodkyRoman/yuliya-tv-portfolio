@@ -9,13 +9,22 @@
 </head>
 
 <body class="project-page">
-    <div id="preloader" class="preloader active">
+    <script>
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent,
+            ) ||
+            window.outerWidth < 1024
+        ) {
+            window.location.href = "mobile.html";
+        }
+    </script>    <div id="preloader" class="preloader active">
         <div class="loader"></div>
     </div>
     <div class="container">
         <header class="header">
             <a href="index.html" class="logo">
-                <span class="name">Yulia</span>
+                <span class="name">Yuliya</span>
                 <span class="surname">Tverdokhlib</span>
             </a>
             <div class="line"></div>
@@ -33,6 +42,7 @@
                 <div class="project-categories">
                     <span>Logo</span>
                     <span>Identity</span>
+                    <span>Packaging design</span>
                 </div>
                 <div class="project-description">
                     <p class="paragraph">Peppy Cosmetics is a brand of teen makeup. The identity and packaging was inspired by the teen girl magazines and TV show aesthetics of late 90s and early 00s. The task was to create a standout branding that could translate the spirit of teenagers - the spirit of freedom, creativity and individuality. It is so crucial for our packaging to stand out, same as for teens who dye their hair, experiment with makeup and clothes to find their unique style.</p>
@@ -59,26 +69,10 @@
         <div class="more-projects">
             <h2 class="more-heading">More projects</h2>
             <div class="other-projects-gallery">
-                <a href="utopia-house.html" class="project-link">
-                    <img src="static/images/projects/utopia/utopia-smiles.webp" alt="" class="project-thumbnail">
-                    <div class="thumbnail-hover">
-                        <h3 class="project-name">Utopia Haus</h3>
-                        <span class="project-label">
-                            Packaging design</span>
-                    </div>
-                </a>
                 <a href="limozh.html" class="project-link">
                     <img src="static/images/projects/limozh/limoge-small.webp" alt="" class="project-thumbnail">
                     <div class="thumbnail-hover">
                         <h3 class="project-name">Limozh</h3>
-                        <span class="project-label">
-                            Logo / Identity / Packaging design</span>
-                    </div>
-                </a>
-                <a href="experiments.html" class="project-link">
-                    <img src="static/images/projects/experiments/zin-thumbnail.webp" alt="" class="project-thumbnail">
-                    <div class="thumbnail-hover">
-                        <h3 class="project-name">Visual experiments</h3>
                         <span class="project-label">
                             Logo / Identity / Packaging design</span>
                     </div>
@@ -89,6 +83,22 @@
                         <h3 class="project-name">War in Ukraine</h3>
                         <span class="project-label">
                             Poster design</span>
+                    </div>
+                </a>
+                <a href="experiments.html" class="project-link">
+                    <img src="static/images/projects/experiments/zin-thumbnail.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Visual experiments</h3>
+                        <span class="project-label">
+                            Logo / Poster design / Zine</span>
+                    </div>
+                </a>
+                <a href="utopia-house.html" class="project-link">
+                    <img src="static/images/projects/utopia/utopia-smiles.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Utopia Haus</h3>
+                        <span class="project-label">
+                            Packaging design / Identity</span>
                     </div>
                 </a>
             </div>

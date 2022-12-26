@@ -9,13 +9,22 @@
 </head>
 
 <body class="project-page">
-    <div id="preloader" class="preloader active">
+    <script>
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent,
+            ) ||
+            window.outerWidth < 1024
+        ) {
+            window.location.href = "mobile.html";
+        }
+    </script>    <div id="preloader" class="preloader active">
         <div class="loader"></div>
     </div>
     <div class="container">
         <header class="header">
             <a href="index.html" class="logo">
-                <span class="name">Yulia</span>
+                <span class="name">Yuliya</span>
                 <span class="surname">Tverdokhlib</span>
             </a>
             <div class="line"></div>
@@ -32,6 +41,7 @@
                 <h1 class="project-name">Utopia Haus</h1>
                 <div class="project-categories">
                     <span>Packaging design</span>
+                    <span>Identity</span>
                 </div>
                 <div class="project-description">
                     <p class="paragraph">Utopia Haus is a party rental company from Sacramento, California. It delivers smiles with luxury party equipment and bounce houses for different type of celebration in your own unique way.</p>
@@ -63,14 +73,6 @@
         <div class="more-projects">
             <h2 class="more-heading">More projects</h2>
             <div class="other-projects-gallery">
-                <a href="peppy.html" class="project-link">
-                    <img src="static/images/projects/peppy/peppy-boxes.webp" alt="" class="project-thumbnail">
-                    <div class="thumbnail-hover">
-                        <h3 class="project-name">Peppy</h3>
-                        <span class="project-label">
-                            Logo / Identity</span>
-                    </div>
-                </a>
                 <a href="posters.html" class="project-link">
                     <img src="static/images/projects/posters/war-in-ukraine.webp" alt="" class="project-thumbnail">
                     <div class="thumbnail-hover">
@@ -79,20 +81,28 @@
                             Poster design</span>
                     </div>
                 </a>
-                <a href="experiments.html" class="project-link">
-                    <img src="static/images/projects/experiments/zin-thumbnail.webp" alt="" class="project-thumbnail">
-                    <div class="thumbnail-hover">
-                        <h3 class="project-name">Visual experiments</h3>
-                        <span class="project-label">
-                            Logo / Identity / Packaging design</span>
-                    </div>
-                </a>
                 <a href="limozh.html" class="project-link">
                     <img src="static/images/projects/limozh/limoge-small.webp" alt="" class="project-thumbnail">
                     <div class="thumbnail-hover">
                         <h3 class="project-name">Limozh</h3>
                         <span class="project-label">
                             Logo / Identity / Packaging design</span>
+                    </div>
+                </a>
+                <a href="peppy.html" class="project-link">
+                    <img src="static/images/projects/peppy/peppy-boxes.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Peppy</h3>
+                        <span class="project-label">
+                            Logo / Identity / Packaging design</span>
+                    </div>
+                </a>
+                <a href="experiments.html" class="project-link">
+                    <img src="static/images/projects/experiments/zin-thumbnail.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">Visual experiments</h3>
+                        <span class="project-label">
+                            Logo / Poster design / Zine</span>
                     </div>
                 </a>
             </div>

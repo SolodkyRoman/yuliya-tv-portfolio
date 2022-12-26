@@ -8,10 +8,19 @@
 </head>
 
 <body class="about-page">
-    <div class="container">
+    <script>
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent,
+            ) ||
+            window.outerWidth < 1024
+        ) {
+            window.location.href = "mobile.html";
+        }
+    </script>    <div class="container">
         <header class="header">
             <a href="index.html" class="logo">
-                <span class="name">Yulia</span>
+                <span class="name">Yuliya</span>
                 <span class="surname">Tverdokhlib</span>
             </a>
             <div class="line"></div>
@@ -82,7 +91,7 @@
                 <h2 class="contact-heading">Contact me</h2>
                 <a href="mailto:yuliya.tverdohlib@gmail.com" class="email-link">yuliya.tverdohlib@gmail.com</a>
                 <div class="socials">
-                    <a href="#" class="social-link">
+                    <a href="https://www.instagram.com/julinzp/" class="social-link">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="29" height="29" fill="white" />
                             <g clip-path="url(#clip0_71_93)">
@@ -122,7 +131,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="" class="social-link">
+                    <a href="https://www.facebook.com/julin.tverdohleb" class="social-link">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="29" height="29" fill="white" />
                             <g clip-path="url(#clip0_71_91)">
@@ -137,7 +146,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#" class="social-link">
+                    <a href="https://www.linkedin.com/in/yuliya-tverdokhlib-b57131b3/" class="social-link">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="29" height="29" fill="white" />
                             <g clip-path="url(#clip0_71_90)">

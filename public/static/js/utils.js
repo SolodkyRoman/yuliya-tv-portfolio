@@ -50,18 +50,24 @@ var loadVideos = async (videoElements) =>
     let processedVideosNumber = 0;
 
     const processVideo = (videoElement) => {
+      console.log(videoElement.readyState);
       videoElement.oncanplaythrough = undefined;
       processedVideosNumber++;
 
       if (processedVideosNumber === videoElements.length) {
+        console.log('res');
         res();
       }
     };
 
     [...videoElements].forEach((videoElement) => {
-      if (videoElement.HAVE_ENOUGH_DATA === 4) {
+      if (videoElement.readyState === 4) {
         return processVideo(videoElement);
       }
+
+      videoElement.addEventListener('canplaythrough', () => {
+        processVideo(videoElement);
+      });
 
       videoElement.addEventListener(
         'error',
@@ -70,10 +76,6 @@ var loadVideos = async (videoElements) =>
         },
         true,
       );
-
-      videoElement.oncanplaythrough = () => {
-        processVideo(videoElement);
-      };
     });
   });
 

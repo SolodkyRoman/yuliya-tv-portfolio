@@ -9,6 +9,9 @@
 
 <body class="about-page">
     {{> smallScreenBanner }}
+    <div id="preloader" class="preloader active">
+        <div class="loader"></div>
+    </div>
     <div class="container">
         {{> header }}
         <div class="about-content">
@@ -151,6 +154,8 @@
             </a>
         </div>
     </div>
+    <script src="static/js/utils.js" defer></script>
+    <script src="static/js/about-page.js" defer></script>
 </body>
 
 </html>

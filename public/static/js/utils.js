@@ -50,12 +50,10 @@ var loadVideos = async (videoElements) =>
     let processedVideosNumber = 0;
 
     const processVideo = (videoElement) => {
-      console.log(videoElement.readyState);
       videoElement.oncanplaythrough = undefined;
       processedVideosNumber++;
 
       if (processedVideosNumber === videoElements.length) {
-        console.log('res');
         res();
       }
     };

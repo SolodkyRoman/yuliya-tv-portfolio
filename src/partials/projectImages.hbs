@@ -8,11 +8,11 @@
     </div>
     {{else}}
     {{#if this.animation}}
-    <video autoplay loop muted playsinline class="project-illustration">
+    <video autoplay loop muted playsinline class="project-illustration {{this.className}}">
         <source src="{{this.src}}" type="video/webm" />
     </video>
     {{else}}
-    <img class="project-illustration" src="{{this.src}}" alt="{{this.alt}}" id="{{this.id}}" />
+    <img class="project-illustration {{this.className}}" src="{{this.src}}" alt="{{this.alt}}" id="{{this.id}}" />
     {{/if}}
     {{/if}}
     {{/each}}

@@ -23,7 +23,7 @@
             /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
                 navigator.userAgent,
             ) ||
-            window.outerWidth < 1024
+            (window.outerWidth < 1024 && window.outerWidth !== 0)
         ) {
             window.location.href = "mobile.html";
         }
@@ -63,17 +63,17 @@
             </div>
         </div>
         <div class="project-pictures">
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-happy.png" alt="Peppy" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-logo-animation.gif" alt="Peppy logo" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-tubes.png" alt="Peppy tubes" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-eyeshadow.png" alt="Peppy eyeshadow" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-lipsticks.png" alt="Peppy lipstick" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-open-lotion.png" alt="Peppy lotion" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-lotion.png" alt="Peppy lotion" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-hair.png" alt="Peppy hair" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-shopping-bag.png" alt="Peppy bag" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-thanks.png" alt="Peppy thanks" id="" />
-            <img class="project-illustration" src="static/images/projects/peppy/peppy-phone.png" alt="Peppy phone" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-happy.png" alt="Peppy" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-logo-animation.gif" alt="Peppy logo" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-tubes.png" alt="Peppy tubes" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-eyeshadow.png" alt="Peppy eyeshadow" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-lipsticks.png" alt="Peppy lipstick" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-open-lotion.png" alt="Peppy lotion" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-lotion.png" alt="Peppy lotion" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-hair.png" alt="Peppy hair" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-shopping-bag.png" alt="Peppy bag" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-thanks.png" alt="Peppy thanks" id="" />
+            <img class="project-illustration " src="static/images/projects/peppy/peppy-phone.png" alt="Peppy phone" id="" />
         </div>
         <div class="more-projects">
             <h2 class="more-heading">More projects</h2>
@@ -84,6 +84,22 @@
                         <h3 class="project-name">Limozh</h3>
                         <span class="project-label">
                             Logo / Identity / Packaging design</span>
+                    </div>
+                </a>
+                <a href="justgo.html" class="project-link">
+                    <img src="static/images/projects/justgo/21.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">JustGo</h3>
+                        <span class="project-label">
+                            Logo / Identity / Illustration / Social</span>
+                    </div>
+                </a>
+                <a href="posters.html" class="project-link">
+                    <img src="static/images/projects/posters/war-in-ukraine.webp" alt="" class="project-thumbnail">
+                    <div class="thumbnail-hover">
+                        <h3 class="project-name">War in Ukraine</h3>
+                        <span class="project-label">
+                            Poster design</span>
                     </div>
                 </a>
                 <a href="utopia-house.html" class="project-link">
@@ -100,14 +116,6 @@
                         <h3 class="project-name">Visual experiments</h3>
                         <span class="project-label">
                             Logo / Poster design / Zine</span>
-                    </div>
-                </a>
-                <a href="posters.html" class="project-link">
-                    <img src="static/images/projects/posters/war-in-ukraine.webp" alt="" class="project-thumbnail">
-                    <div class="thumbnail-hover">
-                        <h3 class="project-name">War in Ukraine</h3>
-                        <span class="project-label">
-                            Poster design</span>
                     </div>
                 </a>
             </div>

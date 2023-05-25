@@ -60,6 +60,16 @@
   .project-illustration {
     margin-bottom: 30px;
     width: 100%;
+
+    &.justgo-cut-borders {
+      clip-path: inset(1px 2px);
+      width: calc(100% + 4px);
+      margin-left: -2px;
+    }
+
+    &.justgo-cut-bottom-border {
+      clip-path: inset(0px 0px 2px);
+    }
   }
 
   .project-illustration-split {

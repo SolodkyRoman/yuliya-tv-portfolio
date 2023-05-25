@@ -4,6 +4,7 @@ const PROJECT_IDS = new Map([
   ['peppy', 'peppy'],
   ['posters', 'posters'],
   ['experiments', 'experiments'],
+  ['justgo', 'justgo'],
 ]);
 
 const PROJECTS_IMAGES = new Map([
@@ -176,6 +177,64 @@ const PROJECTS_IMAGES = new Map([
       },
     ],
   ],
+  [
+    PROJECT_IDS.get('justgo'),
+    [
+      {
+        animation: true,
+        alt: 'JustGo Animation',
+        src: 'static/images/projects/justgo/1.webm',
+      },
+      {
+        alt: 'JustGo Description',
+        src: 'static/images/projects/justgo/2.webp',
+      },
+      {
+        alt: 'JustGo Illustration',
+        src: 'static/images/projects/justgo/3.gif',
+      },
+      {
+        alt: 'JustGo Avocado Pattern',
+        src: 'static/images/projects/justgo/4.webp',
+      },
+      {
+        animation: true,
+        alt: 'JustGo Pattern Animation',
+        src: 'static/images/projects/justgo/5.webm',
+        className: 'justgo-cut-borders',
+      },
+      { alt: 'JustGo Font', src: 'static/images/projects/justgo/6.webp' },
+      { alt: 'JustGo Example', src: 'static/images/projects/justgo/7.webp' },
+      { alt: 'JustGo Title', src: 'static/images/projects/justgo/8.webp' },
+      {
+        alt: 'JustGo Bikes Photo',
+        src: 'static/images/projects/justgo/9.webp',
+      },
+      {
+        animation: true,
+        alt: 'JustGo Socials',
+        src: 'static/images/projects/justgo/10.webm',
+      },
+      { alt: 'JustGo Banner', src: 'static/images/projects/justgo/11.webp' },
+      {
+        alt: 'JustGo App Illustration',
+        src: 'static/images/projects/justgo/16.webp',
+        className: 'justgo-cut-bottom-border',
+      },
+      { alt: 'JustGo App', src: 'static/images/projects/justgo/17.webp' },
+      { alt: 'JustGo Title', src: 'static/images/projects/justgo/18.webp' },
+      { alt: 'JustGo T-Shirt', src: 'static/images/projects/justgo/19.webp' },
+      {
+        animation: true,
+        alt: 'JustGo Website',
+        src: 'static/images/projects/justgo/20.webm',
+      },
+      { alt: 'JustGo Bag', src: 'static/images/projects/justgo/21.webp' },
+      { alt: 'JustGo Van', src: 'static/images/projects/justgo/22.webp' },
+      { alt: 'JustGo Clothes', src: 'static/images/projects/justgo/23.webp' },
+      { alt: 'JustGo Market', src: 'static/images/projects/justgo/24.webp' },
+    ],
+  ],
 ]);
 
 const PROJECT_LABELS = new Map([
@@ -184,9 +243,38 @@ const PROJECT_LABELS = new Map([
   ['packaging', 'Packaging design'],
   ['poster_design', 'Poster design'],
   ['zine', 'Zine'],
+  ['social', 'Social'],
+  ['illustration', 'Illustration'],
 ]);
 
 const PROJECTS_DATA = [
+  {
+    id: PROJECT_IDS.get('justgo'),
+    name: 'JustGo',
+    thumbnailSmall: 'static/images/projects/justgo/21.webp',
+    thumbnailBig: { animation: 'static/images/projects/justgo/1.webm' },
+    labels: [
+      PROJECT_LABELS.get('logo'),
+      PROJECT_LABELS.get('identity'),
+      PROJECT_LABELS.get('illustration'),
+      PROJECT_LABELS.get('social'),
+    ],
+    descriptionBlocks: [
+      'Identity system for JUSTGO delivery.',
+      'JUSTGO is a company with a desire to make delivery affordable to everyone without sacrificing the quality of its produce. Their approach to delivery is bringing exceptionally fresh produce - the way you would pick it yourself.',
+      "The identity's task was to unite people around food without compromises and create a community of like-minded people. The colors, typography, graphic shapes, and illustrations serve to create a friendly and bold look for JUSTGO.",
+    ],
+    credentials: [
+      {
+        key: 'Client',
+        value: 'JUSTGO',
+      },
+      {
+        key: 'Role',
+        value: 'Art Direction/Graphic Design',
+      },
+    ],
+  },
   {
     id: PROJECT_IDS.get('utopia'),
     name: 'Utopia Haus',

@@ -23,7 +23,7 @@
           /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
               navigator.userAgent,
           ) ||
-          window.outerWidth < 1024
+          (window.outerWidth < 1024 && window.outerWidth !== 0)
       ) {
           window.location.href = "mobile.html";
       }
@@ -51,6 +51,23 @@
       packaging design.
     </div>
     <div class="works" id="projects">
+        <div class="project">
+            <div class="meta">
+                <div class="name">JustGo</div>
+                <div class="divider"></div>
+                <div class="categories">
+                    <span class="category">Logo</span>
+                    <span class="category">Identity</span>
+                    <span class="category">Illustration</span>
+                    <span class="category">Social</span>
+                </div>
+            </div>
+            <a href="justgo.html" class="project-link">
+                <video autoplay loop muted playsinline class="thumbnail">
+                    <source src="static/images/projects/justgo/1.webm" type="video/webm" />
+                </video>
+            </a>
+        </div>
         <div class="project">
             <div class="meta">
                 <div class="name">Utopia Haus</div>

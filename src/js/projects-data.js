@@ -214,6 +214,7 @@ const PROJECTS_IMAGES = new Map([
         animation: true,
         alt: 'JustGo Socials',
         src: 'static/images/projects/justgo/10.webm',
+        className: 'justgo-cut-borders',
       },
       { alt: 'JustGo Banner', src: 'static/images/projects/justgo/11.webp' },
       {

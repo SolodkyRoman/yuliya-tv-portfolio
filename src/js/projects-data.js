@@ -183,7 +183,7 @@ const PROJECTS_IMAGES = new Map([
       {
         animation: true,
         alt: 'JustGo Animation',
-        src: 'static/images/projects/justgo/1.webm',
+        src: 'static/images/projects/justgo/1',
       },
       {
         alt: 'JustGo Description',
@@ -200,7 +200,7 @@ const PROJECTS_IMAGES = new Map([
       {
         animation: true,
         alt: 'JustGo Pattern Animation',
-        src: 'static/images/projects/justgo/5.webm',
+        src: 'static/images/projects/justgo/5',
         className: 'justgo-cut-borders',
       },
       { alt: 'JustGo Font', src: 'static/images/projects/justgo/6.webp' },
@@ -213,7 +213,7 @@ const PROJECTS_IMAGES = new Map([
       {
         animation: true,
         alt: 'JustGo Socials',
-        src: 'static/images/projects/justgo/10.webm',
+        src: 'static/images/projects/justgo/10',
         className: 'justgo-cut-borders',
       },
       { alt: 'JustGo Banner', src: 'static/images/projects/justgo/11.webp' },
@@ -228,7 +228,7 @@ const PROJECTS_IMAGES = new Map([
       {
         animation: true,
         alt: 'JustGo Website',
-        src: 'static/images/projects/justgo/20.webm',
+        src: 'static/images/projects/justgo/20',
       },
       { alt: 'JustGo Bag', src: 'static/images/projects/justgo/21.webp' },
       { alt: 'JustGo Van', src: 'static/images/projects/justgo/22.webp' },
@@ -254,10 +254,7 @@ const PROJECTS_DATA = [
     name: 'JustGo',
     thumbnailSmall: 'static/images/projects/justgo/21.webp',
     thumbnailBig: {
-      animation: [
-        { url: 'static/images/projects/justgo/1.webm', type: 'video/webm' },
-        { url: 'static/images/projects/justgo/1.mp4', type: 'video/mp4' },
-      ],
+      animation: 'static/images/projects/justgo/1',
     },
     labels: [
       PROJECT_LABELS.get('logo'),
@@ -286,16 +283,7 @@ const PROJECTS_DATA = [
     name: 'Utopia Haus',
     thumbnailSmall: 'static/images/projects/utopia/utopia-smiles.webp',
     thumbnailBig: {
-      animation: [
-        {
-          url: 'static/images/projects/utopia/utopia-animation.webm',
-          type: 'video/webm',
-        },
-        {
-          url: 'static/images/projects/utopia/utopia-animation.mp4',
-          type: 'video/mp4',
-        },
-      ],
+      animation: 'static/images/projects/utopia/utopia-animation',
     },
     labels: [PROJECT_LABELS.get('packaging'), PROJECT_LABELS.get('identity')],
     descriptionBlocks: [
@@ -322,16 +310,7 @@ const PROJECTS_DATA = [
     name: 'Limozh',
     thumbnailSmall: 'static/images/projects/limozh/limoge-small.webp',
     thumbnailBig: {
-      animation: [
-        {
-          url: 'static/images/projects/limozh/limozh-animation.webm',
-          type: 'video/webm',
-        },
-        {
-          url: 'static/images/projects/limozh/limozh-animation.mp4',
-          type: 'video/mp4',
-        },
-      ],
+      animation: 'static/images/projects/limozh/limozh-animation',
     },
     labels: [
       PROJECT_LABELS.get('logo'),
@@ -381,16 +360,7 @@ const PROJECTS_DATA = [
     name: 'War in Ukraine',
     thumbnailSmall: 'static/images/projects/posters/war-in-ukraine.webp',
     thumbnailBig: {
-      animation: [
-        {
-          url: 'static/images/projects/posters/war-in-ukraine.webm',
-          type: 'video/webm',
-        },
-        {
-          url: 'static/images/projects/posters/war-in-ukraine.mp4',
-          type: 'video/mp4',
-        },
-      ],
+      animation: 'static/images/projects/posters/war-in-ukraine',
     },
     labels: [PROJECT_LABELS.get('poster_design')],
     descriptionBlocks: [
@@ -412,16 +382,7 @@ const PROJECTS_DATA = [
     name: 'Visual experiments',
     thumbnailSmall: 'static/images/projects/experiments/zin-thumbnail.webp',
     thumbnailBig: {
-      animation: [
-        {
-          url: 'static/images/projects/experiments/experiments_animation.webm',
-          type: 'video/webm',
-        },
-        {
-          url: 'static/images/projects/experiments/experiments_animation.mp4',
-          type: 'video/mp4',
-        },
-      ],
+      animation: 'static/images/projects/experiments/experiments_animation',
     },
     labels: [
       PROJECT_LABELS.get('logo'),

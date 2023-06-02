@@ -13,9 +13,8 @@
         <a href="{{id}}.html" class="project-link">
             {{#if thumbnailBig.animation}}
             <video autoplay loop muted playsinline class="thumbnail">
-                {{#each thumbnailBig.animation}}
-                <source src="{{this.url}}" type="{{this.type}}" />
-                {{/each}}
+                <source src="{{this.url}}.webm" type="video/webm" />
+                <source src="{{this.url}}.mp4" type="video/mp4" />
             </video>
             {{else}}
             <img src="{{thumbnailBig}}" alt="Utopia Project" class="thumbnail">

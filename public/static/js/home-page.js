@@ -23,7 +23,7 @@ const handleProjectsPreviewsLoad = () => {
 const handleVideoAnimationsLoad = () => {
   const videoElements = document.getElementsByTagName('video');
 
-  return loadVideos(videoElements);
+  return window.loadVideos(videoElements);
 };
 
 class Slider {

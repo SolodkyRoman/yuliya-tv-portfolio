@@ -8,7 +8,6 @@ const hidePreloaderAfterImageLoad = async () => {
     window.loadImages(images),
     window.loadVideos(videoElements),
   ]);
-
   window.hidePreloader();
 };
 

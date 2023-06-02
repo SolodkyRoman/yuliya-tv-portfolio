@@ -86,3 +86,9 @@ var hidePreloader = () => {
   document.body.classList.remove('block-scroll');
   document.getElementById('preloader').classList.remove('active');
 };
+
+var isMobile = () =>
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  ) ||
+  (window.outerWidth < 1024 && window.outerWidth !== 0);

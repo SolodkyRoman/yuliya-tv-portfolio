@@ -67,6 +67,7 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1600px;
+  min-width: 1000px;
   padding: 0 75px;
   cursor: url(../../images/arrow.png), auto;
 }

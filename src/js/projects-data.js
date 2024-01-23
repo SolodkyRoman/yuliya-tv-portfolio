@@ -1,4 +1,5 @@
 const PROJECT_IDS = new Map([
+  ['elia', 'elia'],
   ['utopia', 'utopia-house'],
   ['limozh', 'limozh'],
   ['peppy', 'peppy'],
@@ -9,12 +10,94 @@ const PROJECT_IDS = new Map([
 
 const PROJECTS_IMAGES = new Map([
   [
+    PROJECT_IDS.get('elia'),
+    [
+      {
+        animation: true,
+        alt: 'Elia animation bubbles',
+        src: 'static/images/projects/elia/1_bubbles_video',
+      },
+      {
+        alt: 'glass table',
+        src: 'static/images/projects/elia/2_on_the_glass_table.webp',
+      },
+      {
+        animation: true,
+        alt: 'Elia animation bubbles',
+        src: 'static/images/projects/elia/4_flavors',
+      },
+      {
+        alt: 'Floating cans',
+        src: 'static/images/projects/elia/05_floating.webp',
+      },
+      {
+        alt: 'grid',
+        src: 'static/images/projects/elia/06_grid.webp',
+      },
+      {
+        alt: 'poster',
+        src: 'static/images/projects/elia/07_wide_poster.webp',
+      },
+      {
+        alt: 'grid',
+        src: 'static/images/projects/elia/08_grid.webp',
+      },
+      {
+        animation: true,
+        alt: 'labels',
+        src: 'static/images/projects/elia/09_labels',
+      },
+      {
+        alt: 'posters',
+        src: 'static/images/projects/elia/10_posters.webp',
+      },
+
+      {
+        alt: '3d render',
+        src: 'static/images/projects/elia/11_dark_render.webp',
+      },
+      {
+        alt: 'grid',
+        src: 'static/images/projects/elia/12_grid.webp',
+      },
+      {
+        alt: '13',
+        src: 'static/images/projects/elia/13_stationery.webp',
+      },
+      {
+        alt: 'tshirt',
+        src: 'static/images/projects/elia/14_tshirt.webp',
+      },
+      {
+        alt: 'video3d',
+        animation: true,
+        src: 'static/images/projects/elia/15_video',
+      },
+      {
+        alt: 'insta_stories',
+        src: 'static/images/projects/elia/16_instagram_stories.webp',
+      },
+      {
+        alt: 'behance',
+        src: 'static/images/projects/elia/17_behance.webp',
+      },
+      {
+        alt: 'website',
+        src: 'static/images/projects/elia/18_web_site.webp',
+      },
+      {
+        alt: 'stickers',
+        src: 'static/images/projects/elia/19_stickers.webp',
+      },
+    ],
+  ],
+  [
     PROJECT_IDS.get('utopia'),
     [
       {
         animation: true,
         alt: 'Utopia animation',
-        src: 'static/images/projects/utopia/utopia-animation.webm',
+        src: 'static/images/projects/utopia/utopia-animation',
       },
       {
         alt: 'Utopia Box',
@@ -240,12 +323,13 @@ const PROJECTS_IMAGES = new Map([
 
 const PROJECT_LABELS = new Map([
   ['logo', 'Logo'],
-  ['identity', 'Identity'],
+  ['identity', 'Brand Identity'],
   ['packaging', 'Packaging design'],
   ['poster_design', 'Poster design'],
   ['zine', 'Zine'],
   ['social', 'Social'],
   ['illustration', 'Illustration'],
+  ['3D', '3D'],
 ]);
 
 const PROJECTS_DATA = [
@@ -278,6 +362,22 @@ const PROJECTS_DATA = [
   //     },
   //   ],
   // },
+  {
+    id: PROJECT_IDS.get('elia'),
+    name: 'Elia',
+    thumbnailSmall: 'static/images/projects/elia/05_floating.webp',
+    thumbnailBig: 'static/images/projects/elia/05_floating.webp',
+    labels: [
+      PROJECT_LABELS.get('identity'),
+      PROJECT_LABELS.get('packaging'),
+      PROJECT_LABELS.get('3D'),
+    ],
+    descriptionBlocks: [
+      'The task was to create the visual identity and packaging for ELIA, a distinguished line of effervescent organic tonic waters crafted to elevate the experience of both cocktails and mocktails. ',
+      "The identity draws its inspiration from the dynamic essence of bubbles, infused with youthful ease. We've crafted a design that's both eye-catching and straightforward with a striking combination of bold typography, unique graphics and vibrant colors. Our goal was to make a product that really pops off the shelf and looks just as good when you open it up for your cocktail party.",
+    ],
+    credentials: [],
+  },
   {
     id: PROJECT_IDS.get('utopia'),
     name: 'Utopia Haus',

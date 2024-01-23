@@ -1,8 +1,7 @@
 const IMAGE_CHANGE_INTERVAL_MS = 1300;
 const IMAGES_SLIDES = [
   'static/images/slides/limozh.png',
-  'static/images/slides/nakleika.png',
-  'static/images/slides/interior.png',
+  'static/images/projects/elia/2_on_the_glass_table.webp',
   'static/images/slides/peppy.png',
   'static/images/slides/this-is-a-war.png',
   'static/images/slides/malard.png',

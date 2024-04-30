@@ -6,6 +6,9 @@ const PROJECT_IDS = new Map([
   ['posters', 'posters'],
   ['experiments', 'experiments'],
   // ['justgo', 'justgo'],
+    [
+        'suntouched', ['suntouched']
+    ]
 ]);
 
 const PROJECTS_IMAGES = new Map([
@@ -319,6 +322,95 @@ const PROJECTS_IMAGES = new Map([
     //   { alt: 'JustGo Market', src: 'static/images/projects/justgo/24.webp' },
     // ],
   ],
+    [PROJECT_IDS.get('suntouched'),
+    [
+        {
+        src: 'static/images/projects/suntouched/1.jpg',
+        alt: 'Conditioner',
+      },
+      {
+        src: 'static/images/projects/suntouched/split.webp',
+        alt: 'All-seasons products',
+      },
+      {
+        src: 'static/images/projects/suntouched/4.webp',
+        alt: 'Suntouched Illustration',
+      },
+      {
+        src: 'static/images/projects/suntouched/5.webp',
+        alt: 'Presentations',
+      },
+      {
+        multiple: [
+          {
+            src: 'static/images/projects/suntouched/6.webp',
+            alt: 'Carbon neutral',
+          },
+          {
+            src: 'static/images/projects/suntouched/7.webp',
+            alt: 'Zero Emissions',
+          }
+        ]
+      },
+      {
+        multiple: [
+          {
+            src: 'static/images/projects/suntouched/8.webp',
+            alt: 'How to use - step 1',
+          },
+          {
+            src: 'static/images/projects/suntouched/9.webp',
+            alt: 'How to use - step 2',
+          },
+          {
+            src: 'static/images/projects/suntouched/10.webp',
+            alt: 'How to use - step 3',
+          }
+        ]
+      },
+      {
+        multiple: [
+          {
+            src: 'static/images/projects/suntouched/ocean.webp',
+            alt: '1% For the planet member',
+          },
+          {
+            src: 'static/images/projects/suntouched/superette.webp',
+            alt: 'Superette',
+          }
+        ]
+      },
+      {
+        multiple: [
+          {
+            src: 'static/images/projects/suntouched/11.webp',
+            alt: 'Suntouched 1',
+          },
+          {
+            src: 'static/images/projects/suntouched/12.webp',
+            alt: 'Suntouched 2',
+          },
+          {
+            src: 'static/images/projects/suntouched/13.webp',
+            alt: 'Suntouched 3',
+          },
+        ]
+      },
+      {
+        multiple: [
+          {
+            src: 'static/images/projects/suntouched/15.gif',
+            alt: 'Suntouched 2',
+          },
+          {
+            src: 'static/images/projects/suntouched/14.webp',
+            alt: 'Suntouched 2',
+          }
+        ]
+      },
+
+    ]]
+
 ]);
 
 const PROJECT_LABELS = new Map([
@@ -330,6 +422,8 @@ const PROJECT_LABELS = new Map([
   ['social', 'Social'],
   ['illustration', 'Illustration'],
   ['3D', '3D'],
+    ['email', 'Email'],
+    ['guidelines', 'Guidelines'],
 ]);
 
 const PROJECTS_DATA = [
@@ -496,6 +590,33 @@ const PROJECTS_DATA = [
       {
         key: 'Client',
         value: 'Personal Project',
+      },
+      {
+        key: 'Role',
+        value: 'Art Direction/Graphic Design',
+      },
+    ],
+  },
+  {
+    id: PROJECT_IDS.get('suntouched'),
+    name: 'Suntouched',
+    thumbnailSmall: 'static/images/projects/experiments/zin-thumbnail.webp',
+    thumbnailBig: {
+      animation: 'static/images/projects/experiments/experiments_animation',
+    },
+    labels: [
+      PROJECT_LABELS.get('packaging'),
+      PROJECT_LABELS.get('social'),
+      PROJECT_LABELS.get('email'),
+      PROJECT_LABELS.get('guidelines'),
+    ],
+    descriptionBlocks: [
+      'I helped the Suntouched team to extend their initial brand identity design through typographic selections and pairings, brand icons, the visual direction and design for social, email campaigns as well as visuals for paid ad campaigns. I updated the brand packaging and developed packaging for new products.',
+    ],
+    credentials: [
+      {
+        key: 'Client',
+        value: 'Suntouched',
       },
       {
         key: 'Role',

@@ -427,6 +427,31 @@ const PROJECT_LABELS = new Map([
 ]);
 
 const PROJECTS_DATA = [
+  {
+    id: PROJECT_IDS.get('suntouched'),
+    name: 'Suntouched',
+    thumbnailSmall: 'static/images/projects/suntouched/1.jpg',
+    thumbnailBig : 'static/images/projects/suntouched/1.jpg',
+    labels: [
+      PROJECT_LABELS.get('packaging'),
+      PROJECT_LABELS.get('social'),
+      PROJECT_LABELS.get('email'),
+      PROJECT_LABELS.get('guidelines'),
+    ],
+    descriptionBlocks: [
+      'I helped the Suntouched team to extend their initial brand identity design through typographic selections and pairings, brand icons, the visual direction and design for social, email campaigns as well as visuals for paid ad campaigns. I updated the brand packaging and developed packaging for new products.',
+    ],
+    credentials: [
+      {
+        key: 'Client',
+        value: 'Suntouched',
+      },
+      {
+        key: 'Role',
+        value: 'Art Direction/Graphic Design',
+      },
+    ],
+  },
   // {
   //   id: PROJECT_IDS.get('justgo'),
   //   name: 'JustGo',
@@ -590,31 +615,6 @@ const PROJECTS_DATA = [
       {
         key: 'Client',
         value: 'Personal Project',
-      },
-      {
-        key: 'Role',
-        value: 'Art Direction/Graphic Design',
-      },
-    ],
-  },
-  {
-    id: PROJECT_IDS.get('suntouched'),
-    name: 'Suntouched',
-    thumbnailSmall: 'static/images/projects/suntouched/1.jpg',
-    thumbnailBig : 'static/images/projects/suntouched/1.jpg',
-    labels: [
-      PROJECT_LABELS.get('packaging'),
-      PROJECT_LABELS.get('social'),
-      PROJECT_LABELS.get('email'),
-      PROJECT_LABELS.get('guidelines'),
-    ],
-    descriptionBlocks: [
-      'I helped the Suntouched team to extend their initial brand identity design through typographic selections and pairings, brand icons, the visual direction and design for social, email campaigns as well as visuals for paid ad campaigns. I updated the brand packaging and developed packaging for new products.',
-    ],
-    credentials: [
-      {
-        key: 'Client',
-        value: 'Suntouched',
       },
       {
         key: 'Role',

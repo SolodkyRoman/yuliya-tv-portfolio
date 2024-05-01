@@ -600,10 +600,8 @@ const PROJECTS_DATA = [
   {
     id: PROJECT_IDS.get('suntouched'),
     name: 'Suntouched',
-    thumbnailSmall: 'static/images/projects/experiments/zin-thumbnail.webp',
-    thumbnailBig: {
-      animation: 'static/images/projects/experiments/experiments_animation',
-    },
+    thumbnailSmall: 'static/images/projects/suntouched/1.jpg',
+    thumbnailBig : 'static/images/projects/suntouched/1.jpg',
     labels: [
       PROJECT_LABELS.get('packaging'),
       PROJECT_LABELS.get('social'),

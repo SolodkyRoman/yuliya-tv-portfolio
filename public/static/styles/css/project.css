@@ -232,7 +232,8 @@ a {
   font-weight: 700;
 }
 .project-page .project-pictures {
-  margin-top: 60px;
+  width: 80%;
+  margin: 60px auto 0 auto;
 }
 .project-page .project-illustration {
   margin-bottom: 30px;
